@@ -1,7 +1,6 @@
 <?php
 namespace Grav\Plugin;
 
-use Grav\Common\Grav;
 use Grav\Common\Plugin;
 use Grav\Common\Twig\Twig;
 use Grav\Plugin\Email\Email;
@@ -71,9 +70,6 @@ class EmailPlugin extends Plugin
                 $vars = array(
                     'form' => $form
                 );
-
-                $grav = Grav::instance();
-                $grav->fireEvent('onEmailSend', new Event(['params' => &$params, 'vars' => &$vars]));
 
                 // Build message
                 $message = $this->buildMessage($params, $vars);

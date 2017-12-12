@@ -1,0 +1,49 @@
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+<section>
+    {% if grav.language.getActive == 'es' %}
+        <h1 class="general-title">Cuidado de las piezas</h1>
+    {% endif %}
+    {% if grav.language.getActive == 'en' %}
+        <h1 class="general-title">Care of the pieces</h1>
+    {% endif %}
+</section>
+
+<section class="limiter section-limiter">
+    <div>
+        <div class="maintenance-content">
+            <img src="{{ url(header.care_first_icon|keys|first) }}" alt=""> 
+            <h2>{{header.care_first_title}}</h2>           
+        </div>
+       <ul class="list-maintenance">
+           {% for item in header.care_first_list %}
+               <li>{{item.care_first_item}}</li>
+           {% endfor %}
+       </ul>
+    </div>
+    <div>
+        <div class="maintenance-content">
+            <img src="{{ url(header.care_second_icon|keys|first) }}" alt="">
+            <h2>{{header.care_second_title}}</h2>     
+        </div>
+
+        <ul class="list-maintenance">
+           {% for item in header.care_second_list %}
+               <li>{{item.care_second_item}}</li>
+           {% endfor %}
+       </ul>
+    </div>
+    <div>
+        <div class="maintenance-content">
+            <img src="{{ url(header.care_third_icon|keys|first) }}" alt="">
+            <h2>{{header.care_first_title}}</h2>         
+        </div>
+        <ul class="list-maintenance">
+           {% for item in header.care_third_list %}
+               <li>{{item.care_third_item}}</li>
+           {% endfor %}
+       </ul>
+    </div>
+</section>
+{% endblock %}

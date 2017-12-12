@@ -3,7 +3,6 @@ namespace Grav\Plugin;
 
 use Grav\Common\Data\Data;
 use Grav\Common\Data\Blueprint;
-use Grav\Common\Data\ValidationException;
 use Grav\Common\Filesystem\Folder;
 use Grav\Common\Grav;
 use Grav\Common\Inflector;
@@ -22,9 +21,9 @@ class Form extends Iterator implements \Serializable
     public $message;
 
     /**
-     * @var int
+     * @var string
      */
-    public $response_code;
+    public $message_color;
 
     /**
      * @var string
@@ -69,12 +68,11 @@ class Form extends Iterator implements \Serializable
      */
     protected $page;
 
-
     /**
      * Create form for the given page.
      *
      * @param Page $page
-     * @param string|int|null $name
+     * @param null $name
      * @param null $form
      */
     public function __construct(Page $page, $name = null, $form = null)
@@ -83,8 +81,8 @@ class Form extends Iterator implements \Serializable
 
         $this->page = $page->route();
 
-        $header = $page->header();
-        $this->rules = isset($header->rules) ? $header->rules : [];
+        $header            = $page->header();
+        $this->rules       = isset($header->rules) ? $header->rules : [];
         $this->header_data = isset($header->data) ? $header->data : [];
 
         if ($form) {
@@ -127,6 +125,7 @@ class Form extends Iterator implements \Serializable
         $data = [
             'items' => $this->items,
             'message' => $this->message,
+            'message_color' => $this->message_color,
             'status' => $this->status,
             'header_data' => $this->header_data,
             'rules' => $this->rules,
@@ -148,6 +147,7 @@ class Form extends Iterator implements \Serializable
 
         $this->items = $data['items'];
         $this->message = $data['message'];
+        $this->message_color = $data['message_color'];
         $this->status = $data['status'];
         $this->header_data = $data['header_data'];
         $this->rules = $data['rules'];
@@ -156,7 +156,7 @@ class Form extends Iterator implements \Serializable
         $items = $this->items;
         $rules = $this->rules;
 
-        $blueprint  = function () use ($name, $items, $rules) {
+        $blueprint  = function() use ($name, $items, $rules) {
             $blueprint = new Blueprint($name, ['form' => $items, 'rules' => $rules]);
             return $blueprint->load()->init();
         };
@@ -202,19 +202,19 @@ class Form extends Iterator implements \Serializable
         $items = $this->items;
         $rules = $this->rules;
 
-        $blueprint = function() use ($name, $items, $rules) {
+        $blueprint  = function() use ($name, $items, $rules) {
             $blueprint = new Blueprint($name, ['form' => $items, 'rules' => $rules]);
             return $blueprint->load()->init();
         };
 
-        $this->data = new Data($this->header_data, $blueprint);
+        $this->data   = new Data($this->header_data, $blueprint);
         $this->values = new Data();
-        // Reset fields to null before calling fields() -- Do not remove:
         $this->fields = null;
         $this->fields = $this->fields();
 
         // Fire event
         $grav->fireEvent('onFormInitialized', new Event(['form' => $this]));
+
     }
 
     protected function processFields($fields)
@@ -223,13 +223,14 @@ class Form extends Iterator implements \Serializable
 
         $return = array();
         foreach ($fields as $key => $value) {
+
             // default to text if not set
             if (!isset($value['type'])) {
                 $value['type'] = 'text';
             }
 
             // manually merging the field types
-            if ($types !== null && array_key_exists($value['type'], $types)) {
+            if ($types !== null && key_exists($value['type'], $types)) {
                 $value += $types[$value['type']];
             }
 
@@ -245,10 +246,9 @@ class Form extends Iterator implements \Serializable
         return $return;
     }
 
-    public function fields()
-    {
+    public function fields() {
 
-        if (null === $this->fields) {
+        if (is_null($this->fields)) {
             $blueprint = $this->data->blueprints();
 
             if (method_exists($blueprint, 'load')) {
@@ -302,6 +302,8 @@ class Form extends Iterator implements \Serializable
      * Set value of given variable in the values array
      *
      * @param string $name
+     *
+     * @return mixed
      */
     public function setValue($name = null, $value = '')
     {
@@ -325,7 +327,7 @@ class Form extends Iterator implements \Serializable
 
     /**
      * Get all data
-     *
+     * 
      * @return Data
      */
     public function getData()
@@ -337,9 +339,8 @@ class Form extends Iterator implements \Serializable
      * Set value of given variable in the data array
      *
      * @param string $name
-     * @param string $value
      *
-     * @return bool
+     * @return mixed
      */
     public function setData($name = null, $value = '')
     {
@@ -393,56 +394,28 @@ class Form extends Iterator implements \Serializable
                 'status' => 'error',
                 'message' => sprintf($grav['language']->translate('PLUGIN_FORM.FILEUPLOAD_UNABLE_TO_UPLOAD', null, true), $upload->file->name, $this->upload_errors[$upload->file->error])
             ];
-        }
+        } else {
+            // Remove the error object to avoid storing it
+            unset($upload->file->error);
 
-        // Handle bad filenames.
-        $filename = $upload->file->name;
-        if (strtr($filename, "\t\n\r\0\x0b", '_____') !== $filename || rtrim($filename, ". ") !== $filename || preg_match('|\.php|', $filename)) {
-            $this->admin->json_response = [
-                'status'  => 'error',
-                'message' => sprintf($this->admin->translate('PLUGIN_ADMIN.FILEUPLOAD_UNABLE_TO_UPLOAD', null),
-                    $filename, 'Bad filename')
-            ];
+            // we need to move the file at this stage or else
+            // it won't be available upon save later on
+            // since php removes it from the upload location
+            $tmp_dir = $grav['locator']->findResource('tmp://', true, true);
+            $tmp_file = $upload->file->tmp_name;
+            $tmp = $tmp_dir . '/uploaded-files/' . basename($tmp_file);
 
-            return false;
-        }
-
-        // Remove the error object to avoid storing it
-        unset($upload->file->error);
-
-
-        // Handle Accepted file types
-        // Accept can only be mime types (image/png | image/*) or file extensions (.pdf|.jpg)
-        $accepted = false;
-        $errors = [];
-        foreach ((array) $settings->accept as $type) {
-            // Force acceptance of any file when star notation
-            if ($type === '*') {
-                $accepted = true;
-                break;
+            Folder::create(dirname($tmp));
+            if (!move_uploaded_file($tmp_file, $tmp)) {
+                // json_response
+                return [
+                    'status' => 'error',
+                    'message' => sprintf($grav['language']->translate('PLUGIN_FORM.FILEUPLOAD_UNABLE_TO_MOVE', null, true), '', $tmp)
+                ];
             }
 
-            $isMime = strstr($type, '/');
-            $find = str_replace('*', '.*', $type);
-
-            $match = preg_match('#'. $find .'$#', $isMime ? $upload->file->type : $upload->file->name);
-            if (!$match) {
-                $message = $isMime ? 'The MIME type "' . $upload->file->type . '"' : 'The File Extension';
-                $errors[] = $message . ' for the file "' . $upload->file->name . '" is not an accepted.';
-                $accepted |= false;
-            } else {
-                $accepted |= true;
-            }
+            $upload->file->tmp_name = $tmp;
         }
-
-        if (!$accepted) {
-            // json_response
-            return [
-                'status' => 'error',
-                'message' => implode('<br/>', $errors)
-            ];
-        }
-
 
         // Handle file size limits
         $settings->filesize *= self::BYTES_TO_MB; // 1024 * 1024 [MB in Bytes]
@@ -455,37 +428,45 @@ class Form extends Iterator implements \Serializable
         }
 
 
-        // we need to move the file at this stage or else
-        // it won't be available upon save later on
-        // since php removes it from the upload location
-        $tmp_dir = $grav['locator']->findResource('tmp://', true, true);
-        $tmp_file = $upload->file->tmp_name;
-        $tmp = $tmp_dir . '/uploaded-files/' . basename($tmp_file);
+        // Handle Accepted file types
+        // Accept can only be mime types (image/png | image/*) or file extensions (.pdf|.jpg)
+        $accepted = false;
+        $errors = [];
+        foreach ((array) $settings->accept as $type) {
+            // Force acceptance of any file when star notation
+            if ($type == '*') {
+                $accepted = true;
+                break;
+            }
 
-        Folder::create(dirname($tmp));
-        if (!move_uploaded_file($tmp_file, $tmp)) {
+            $isMime = strstr($type, '/');
+            $find = str_replace('*', '.*', $type);
+
+            $match = preg_match('#'. $find .'$#', $isMime ? $upload->file->type : $upload->file->name);
+            if (!$match) {
+                $message = $isMime ? 'The MIME type "' . $upload->file->type . '"' : 'The File Extension';
+                $errors[] = $message . ' for the file "' . $upload->file->name . '" is not an accepted.';
+                $accepted |= false;
+            }  else {
+                $accepted |= true;
+            }
+        }
+
+        if (!$accepted) {
             // json_response
             return [
                 'status' => 'error',
-                'message' => sprintf($grav['language']->translate('PLUGIN_FORM.FILEUPLOAD_UNABLE_TO_MOVE', null, true), '', $tmp)
+                'message' => implode('<br />', $errors)
             ];
         }
-
-        $upload->file->tmp_name = $tmp;
 
         // Retrieve the current session of the uploaded files for the field
         // and initialize it if it doesn't exist
         $sessionField = base64_encode($uri);
         $flash = $session->getFlashObject('files-upload');
-        if (!$flash) {
-            $flash = [];
-        }
-        if (!isset($flash[$sessionField])) {
-            $flash[$sessionField] = [];
-        }
-        if (!isset($flash[$sessionField][$upload->field])) {
-            $flash[$sessionField][$upload->field] = [];
-        }
+        if (!$flash) { $flash = []; }
+        if (!isset($flash[$sessionField])) { $flash[$sessionField] = []; }
+        if (!isset($flash[$sessionField][$upload->field])) { $flash[$sessionField][$upload->field] = []; }
 
         // Set destination
         $destination = Folder::getRelativePath(rtrim($settings->destination, '/'));
@@ -543,24 +524,23 @@ class Form extends Iterator implements \Serializable
 
         if (isset($_POST)) {
             $this->values = new Data(isset($_POST) ? (array)$_POST : []);
-            $data = $this->values->get('data');
+            $data         = $this->values->get('data');
 
             // Add post data to form dataset
             if (!$data) {
                 $data = $this->values->toArray();
             }
 
+            if (method_exists('Grav\Common\Utils', 'getNonce')) {
+                if (!$this->values->get('form-nonce') || !Utils::verifyNonce($this->values->get('form-nonce'), 'form')) {
+                    $event = new Event(['form'    => $this,
+                                        'message' => $grav['language']->translate('PLUGIN_FORM.NONCE_NOT_VALIDATED')
+                    ]);
+                    $grav->fireEvent('onFormValidationError', $event);
 
-            if (!$this->values->get('form-nonce') || !Utils::verifyNonce($this->values->get('form-nonce'), 'form')) {
-                $this->status = 'error';
-                $event = new Event(['form' => $this,
-                                    'message' => $grav['language']->translate('PLUGIN_FORM.NONCE_NOT_VALIDATED')
-                ]);
-                $grav->fireEvent('onFormValidationError', $event);
-
-                return;
+                    return;
+                }
             }
-
 
             $i = 0;
             foreach ($this->items['fields'] as $key => $field) {
@@ -571,7 +551,7 @@ class Form extends Iterator implements \Serializable
                         unset($data[$i]);
                     }
                 }
-                if ($field['type'] === 'checkbox') {
+                if ($field['type'] == 'checkbox') {
                     $data[$name] = isset($data[$name]) ? true : false;
                 }
                 $i++;
@@ -586,16 +566,8 @@ class Form extends Iterator implements \Serializable
             $this->data->filter();
 
             $grav->fireEvent('onFormValidationProcessed', new Event(['form' => $this]));
-        } catch (ValidationException $e) {
-            $this->status = 'error';
-            $event = new Event(['form' => $this, 'message' => $e->getMessage(), 'messages' => $e->getMessages()]);
-            $grav->fireEvent('onFormValidationError', $event);
-            if ($event->isPropagationStopped()) {
-                return;
-            }
         } catch (\RuntimeException $e) {
-            $this->status = 'error';
-            $event = new Event(['form' => $this, 'message' => $e->getMessage(), 'messages' => []]);
+            $event = new Event(['form' => $this, 'message' => $e->getMessage(), 'messages' => $e->getMessages()]);
             $grav->fireEvent('onFormValidationError', $event);
             if ($event->isPropagationStopped()) {
                 return;
@@ -617,6 +589,7 @@ class Form extends Iterator implements \Serializable
                 }
 
                 $this->data->merge([$key => $files]);
+
             }
         }
 
@@ -626,11 +599,11 @@ class Form extends Iterator implements \Serializable
             foreach ($process as $action => $data) {
                 if (is_numeric($action)) {
                     $action = \key($data);
-                    $data = $data[$action];
+                    $data   = $data[$action];
                 }
 
                 $previousEvent = $event;
-                $event = new Event(['form' => $this, 'action' => $action, 'params' => $data]);
+                $event         = new Event(['form' => $this, 'action' => $action, 'params' => $data]);
 
                 if ($previousEvent) {
                     if (!$previousEvent->isPropagationStopped()) {
@@ -657,13 +630,12 @@ class Form extends Iterator implements \Serializable
      * @param string $key
      * @return object a new Object with a normalized list of files
      */
-    protected function normalizeFiles($data, $key = '')
-    {
+    protected function normalizeFiles($data, $key = '') {
         $files = new \stdClass();
         $files->field = $key;
         $files->file = new \stdClass();
 
-        foreach ($data as $fieldName => $fieldValue) {
+        foreach($data as $fieldName => $fieldValue) {
             // Since Files Upload are always happening via Ajax
             // we are not interested in handling `multiple="true"`
             // because they are always handled one at a time.
@@ -697,9 +669,9 @@ class Form extends Iterator implements \Serializable
     {
         $config = Grav::instance()['config'];
 
-        $filesize_mb = (float)$config->get('plugins.form.files.filesize', 0) * static::BYTES_TO_MB;
+        $filesize_mb = $config->get('plugins.form.files.filesize', 0) * static::BYTES_TO_MB;
         $system_filesize = $config->get('system.media.upload_limit', 0);
-        if ($filesize_mb > $system_filesize || $filesize_mb === 0) {
+        if ($filesize_mb > $system_filesize || $filesize_mb == 0) {
             $filesize_mb = $system_filesize;
         }
 
@@ -708,13 +680,5 @@ class Form extends Iterator implements \Serializable
         }
 
         return $filesize_mb  / static::BYTES_TO_MB;
-    }
-
-    public function responseCode($code = null)
-    {
-        if ($code) {
-            $this->response_code = $code;
-        }
-        return $this->response_code;
     }
 }

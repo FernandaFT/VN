@@ -1,0 +1,23 @@
+<h1 class="general-title" >{{header.title}}</h1>
+<div class="section-frequent-doubts limiter section-limiter">
+  {{ page.content}}
+
+    <ul>
+        {% set sum = 1 %}
+        {% for question in page.header.frequentQuestion %}
+           <em  class="down"></em> 
+            <li class="question">
+                
+                <h4 class="question-tittle" >
+                    {{sum}}-
+                    {{ question.question }}
+                </h4>
+                <p class="question-answer hide-answer">
+                    {{ question.answer }}
+                </p>
+            </li>  
+            {% set sum = sum + 1 %}
+        {% endfor %}
+    </ul>
+        
+</div>

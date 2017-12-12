@@ -1,0 +1,42 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1,h2,h3,h4,h5{
+  font-family: $font-family-contrast;
+  font-weight: $font-family-contrast-regular;
+  margin: 0 ;
+
+}
+// h1,h2,h3{
+//   font-size: 45px;
+// }
+p {
+  font-family: $font-family-base;
+  font-weight: $font-family-base-regular;
+}
+//
+// Layout
+//
+
+.limiter {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+img {
+  width: inherit;
+  max-width: 100%;
+  height: auto;
+}
+@media screen and(min-width: 700px) {
+   .limiter{
+        max-width: 1280px;
+    } 
+}

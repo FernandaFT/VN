@@ -1,0 +1,24 @@
+<div class="section">
+    {{ page.content}}
+
+    <div>
+      <img src="{{ url(page.header.leftImage|keys|first) }}" alt="">
+    </div>  
+
+    <h1>{{ page.header.sectionTitle }}</h1>
+
+    {% if grav.language.getActive == 'es' %}
+      <a href="{{base_url}}{{header.redirectPage}}">Ver más</a>
+    {% endif %}
+
+    {% if grav.language.getActive == 'en' %}
+      <a href="{{base_url}}{{header.redirectPage}}">More</a>
+    {% endif %}
+
+    {% if (page.header.rightImage|first).path %}
+        <div>
+          <img src="{{ url(page.header.rightImage|keys|first) }}" alt="">
+        </div>
+    {% endif %}
+        
+</div>
