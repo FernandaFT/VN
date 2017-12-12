@@ -1,13 +1,19 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
-    'filename' => '/Applications/MAMP/htdocs/VN/grav/user/accounts/admin.yaml',
+    'filename' => '/Applications/MAMP/htdocs/VN/grav/user/accounts/iosegueda.yaml',
     'modified' => 1513119687,
     'data' => [
-        'email' => 'fernandafajardot@gmail.com',
-        'fullname' => 'Fernanda Fajardo',
-        'title' => 'administrador',
         'state' => 'enabled',
+        'email' => 'pasosegueda@gmail.com',
+        'fullname' => 'Isabel Osegueda',
+        'title' => 'administrador',
+        'language' => 'en',
+        'twofa_enabled' => false,
+        'twofa_secret' => 'IEQCDNLXUOXRYRDLA4U3LKZFQVS3FW6Y',
+        'groups' => [
+            0 => 'administrators'
+        ],
         'access' => [
             'admin' => [
                 'super' => 'true',
@@ -30,20 +36,8 @@ return [
                 'users' => 'true',
                 'groups' => 'true',
                 'users_expert' => 'true'
-            ],
-            'site' => [
-                'login' => 'true'
             ]
         ],
-        'hashed_password' => '$2y$10$r6nV2Lv78R54PTiNxu3MVOpOhjIj9/ikarZ1DmoiDZHL6G3jgtx6C',
-        'language' => 'en',
-        'login_attempts' => [
-            
-        ],
-        'twofa_secret' => 'IEQCDNLXUOXRYRDLA4U3LKZFQVS3FW6Y',
-        'twofa_enabled' => false,
-        'groups' => [
-            0 => 'administrators'
-        ]
+        'hashed_password' => '$2y$10$CQc/mG0p6gtxJmsOXP391.X2luscnF.q8VgJd.cjSWUFfMGhoJzES'
     ]
 ];
