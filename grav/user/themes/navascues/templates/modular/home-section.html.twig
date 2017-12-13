@@ -1,24 +1,34 @@
-<div class="section">
+<div class="section limiter">
     {{ page.content}}
 
-    <div>
-      <img src="{{ url(page.header.leftImage|keys|first) }}" alt="">
-    </div>  
-
-    <h1>{{ page.header.sectionTitle }}</h1>
-
-    {% if grav.language.getActive == 'es' %}
-      <a href="{{base_url}}{{header.redirectPage}}">Ver más</a>
-    {% endif %}
+    <section class="categories">
+      <div>
+        <img src="{{ url(page.header.leftImage|keys|first) }}" alt="">   
+      </div>
+      <div class="bg-info">
+        <h1>{{ page.header.sectionTitle }}</h1>
+        {% if grav.language.getActive == 'es' %}
+          <a class="button button-pink"href="{{base_url}}{{header.redirectPage}}">Ver más</a>
+        {% endif %}
+      </div>
+      {% if (page.header.rightImage|first).path %}
+        <div>
+          <img class="last-image" src="{{ url(page.header.rightImage|keys|first) }}" alt="">
+        </div>
+      {% endif %}    
+    </section> 
+    <section class="learn-more">
+      <div>
+        <h1>¿Quieres conocer más sobre nuestros productos?</h1>
+        <p>Conozca más sobre nuestros productos descargando el siguiente catálogo</p>
+        <a href="">Descargar Catálogo</a>
+      </div>
+    </section> 
+   
 
     {% if grav.language.getActive == 'en' %}
       <a href="{{base_url}}{{header.redirectPage}}">More</a>
     {% endif %}
 
-    {% if (page.header.rightImage|first).path %}
-        <div>
-          <img src="{{ url(page.header.rightImage|keys|first) }}" alt="">
-        </div>
-    {% endif %}
-        
 </div>
+
