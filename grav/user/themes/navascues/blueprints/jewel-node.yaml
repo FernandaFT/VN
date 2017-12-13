@@ -1,10 +1,7 @@
-title: Jewel-node
-
-rules:
-  slug:
-    pattern: '[a-zA-Zа-яA-Я0-9_\-]+'
-    min: 1
-    max: 200
+title: Jewel Node
+@extends:
+    type: default
+    context: blueprints://pages
 
 form:
   validation: loose
@@ -16,8 +13,13 @@ form:
       active: 1
 
       fields:
+        content:
+          type: hidden
+        options:
+          type: hidden
         general:
           type: tab
+          ordering@: 0
           title: General
 
           fields:
