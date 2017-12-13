@@ -1,51 +1,52 @@
 {% if truncate %}
 <!-- se muestra si es la lista de categorías -->
-
-<div class="jewel-list-item">
-	<div class="jewel-item jewel-image-item">
-		<img src="{{ url(page.header.myJewel|keys|first) }}" alt="">
-
-		<div class="jewel-description-desktop">
-			<span>
-        		<h3>{{ page.title }}</h3>
-		
-        		{% if grav.language.getActive == 'es' %}
-					<p>Precio: {{ page.header.price }}</p>
-    			{% endif %}
-		
-        		{% if grav.language.getActive == 'en' %}
-					<p>Price: {{ page.header.price }}</p>
-				{% endif %}
-				
-				{% if grav.language.getActive == 'es' %}
-					<a class="button button-blue" href="{{ page.url }}">Ver más detalles</a>
-    			{% endif %}
-				{% if grav.language.getActive == 'en' %}
-					<a class="button button-blue" href="{{ page.url }}">Read More</a>
-    			{% endif %}
-			</span>
+<div class="limiter">
+	<div class="jewel-list-item">
+		<div class="jewel-item jewel-image-item">
+			<img src="{{ url(page.header.myJewel|keys|first) }}" alt="">
+	
+			<div class="jewel-description-desktop">
+				<span>
+	        		<h3>{{ page.title }}</h3>
+			
+	        		{% if grav.language.getActive == 'es' %}
+						<p>Precio: {{ page.header.price }}</p>
+	    			{% endif %}
+			
+	        		{% if grav.language.getActive == 'en' %}
+						<p>Price: {{ page.header.price }}</p>
+					{% endif %}
+					
+					{% if grav.language.getActive == 'es' %}
+						<a class="button button-blue" href="{{ page.url }}">Ver más detalles</a>
+	    			{% endif %}
+					{% if grav.language.getActive == 'en' %}
+						<a class="button button-blue" href="{{ page.url }}">Read More</a>
+	    			{% endif %}
+				</span>
+			</div>
+	
+		</div><div class="jewel-item jewel-description-item">
+	        <h3>{{ page.title }}</h3>
+	
+	        {% if grav.language.getActive == 'es' %}
+				<p>Precio: {{ page.header.price }}</p>
+	    	{% endif %}
+	
+	        {% if grav.language.getActive == 'en' %}
+				<p>Price: {{ page.header.price }}</p>
+			{% endif %}
+			
+			{% if grav.language.getActive == 'es' %}
+				<a class="button button-blue" href="{{ page.url }}">Ver más detalles</a>
+	    	{% endif %}
+			{% if grav.language.getActive == 'en' %}
+				<a class="button button-blue" href="{{ page.url }}">Read More</a>
+	    	{% endif %}
+	
 		</div>
-
-	</div><div class="jewel-item jewel-description-item">
-        <h3>{{ page.title }}</h3>
-
-        {% if grav.language.getActive == 'es' %}
-			<p>Precio: {{ page.header.price }}</p>
-    	{% endif %}
-
-        {% if grav.language.getActive == 'en' %}
-			<p>Price: {{ page.header.price }}</p>
-		{% endif %}
-		
-		{% if grav.language.getActive == 'es' %}
-			<a class="button button-blue" href="{{ page.url }}">Ver más detalles</a>
-    	{% endif %}
-		{% if grav.language.getActive == 'en' %}
-			<a class="button button-blue" href="{{ page.url }}">Read More</a>
-    	{% endif %}
-
+	
 	</div>
-
 </div>
 
 {% else %}
