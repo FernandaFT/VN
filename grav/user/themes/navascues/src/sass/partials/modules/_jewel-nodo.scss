@@ -1,17 +1,132 @@
 .holder {
-    display: flex;
-    flex-wrap: wrap;
-    
-    li {
-        display: inline-block;
+    @media screen and (min-width: 700px) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.jewelry-page-title {
+    border-bottom: 2px solid #84d8d0;
+
+    h1 {
+        font-size: 25px;
+    }
+}
+
+.jewel-list {
+    @media screen and (min-width: 700px) {
+        width: 25%;
     }
 }
 
 .jewel-list-item {
-    display: inline-block;
-    width: 30%;
+    background-color: #84d8d0;
+    margin: 5px 0;
 
-    img {
-        width: 100%;
+    @media screen and (min-width: 700px) {
+        background-color: transparent;
+        margin: 5px 0;
     }
+}
+
+.jewel-item {
+    display: inline-block;
+    width: 50%;
+    overflow: hidden;
+    vertical-align: middle;
+   
+    img {   
+        width: 100%;
+        vertical-align: top;
+
+        @media screen and (min-width: 700px) {
+            vertical-align: 0;
+            max-height: 100%;
+        }
+    }
+
+    @media screen and (min-width: 700px) {
+        width: 0;
+    }
+}
+
+.jewel-description-item {
+    text-align: center;
+    margin: 10% 0;
+    padding: 2%;
+
+    p {
+        font-size:  15px;
+        margin: 5% 0;
+    }
+
+    a {
+        border-bottom: 1px solid #000;
+        font-size: 13px;
+    }
+
+    @media screen and (min-width: 700px) {
+        display: none;
+        background-color: #84d8d0;
+    }
+
+}
+
+.jewel-description-desktop {
+    display: none;
+    @media screen and (min-width: 700px) {
+        display: block;
+        position: absolute;
+        background-color: #84d8d0;
+        width: 100%;
+        bottom: 0;
+        height: 0;
+        transition: height 0.5s ease-out;
+
+        span {
+            margin: 5%;
+            text-align: center;
+            display: block;
+            
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.jewel-details-node {
+    h1 {
+        text-align: center;
+    }
+
+    li, p, h3 {
+        margin: 3% 0;
+    }
+
+    p, li {
+        display: inline-block;
+        font-size: 14px;
+    }
+
+}
+
+.jewel-details {
+    border-bottom: 2px solid #84d8d0;
+}
+
+.jewel-image-item {
+    @media screen and (min-width: 700px) {
+        width: 100%;
+        position: relative;
+        height: 300px;
+    
+        &:hover {
+    
+            .jewel-description-desktop {
+                height: 30%;
+            }
+        }
+    }
+    
 }

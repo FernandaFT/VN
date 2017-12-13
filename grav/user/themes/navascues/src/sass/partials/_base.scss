@@ -26,17 +26,24 @@ p {
 //
 
 .limiter {
-  max-width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 20px;
+  @media screen and (min-width: $small) {
+    max-width: $small;
+  }
+  @media screen and (min-width: $medium) {
+    max-width: $medium;
+  }
+  @media screen and (min-width: $large) {
+    max-width: $large;
+  }
+  @media screen and (min-width: $x-large) {
+    max-width: $x-large;
+  }
 }
+
 img {
   width: inherit;
   max-width: 100%;
   height: auto;
-}
-@media screen and(min-width: 700px) {
-   .limiter{
-        max-width: 1280px;
-    } 
 }

@@ -37,12 +37,16 @@ form:
               
             header.myJewel:
               type: file
-              label: Image
+              label: Select a image to cover page
               destination: 'self@'
-              limit: 1
+              multiple: true
               filesize: 10
               accept:
                 - image/*
+
+            header.media_order:
+              type: pagemedia
+              label: PLUGIN_ADMIN.PAGE_MEDIA
 
         options:
           type: tab
