@@ -80,12 +80,6 @@ blockquote {
     text-transform: uppercase;
 }
 
-.footer {
-    background-color: #eee;
-    width: 100%;
-    position: absolute;
-    padding: 50px;
-}
 
 /* Menu Settings */
 .main-nav ul {
