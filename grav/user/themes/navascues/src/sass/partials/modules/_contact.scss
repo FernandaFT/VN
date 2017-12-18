@@ -2,6 +2,13 @@
   text-align: center;
   margin-top: 40px;
 }
+
+.image-contact {
+  -webkit-box-shadow: 0px 7px 5px -3px #a19d9d;
+  -moz-box-shadow: 0px 7px 5px -3px #a19d9d;
+  box-shadow: 0px 7px 5px -3px #a19d9d;
+}
+
 .contact-title {
   padding: 0 0 20px 0;
   @media screen and (min-width: $small) {
