@@ -3,12 +3,14 @@
 {% block content %}
 <div class="about">
 	{{ page.content}}
-    <div class="image-contact">
+    <h1 class="contact-title">Contáctenos</h1>
+    <div class="info">
         <img src="{{ url(page.header.contactImage|keys|first) }}" alt="">
         <div class="info-contact">
-            <h1>{{ header.contactTitle }}</h1>
-            <h2>{{ header.mail }}</h2>
+            <h2>{{ header.contactTitle }}</h2>
+            <p>{{ header.mail }}</p>
         </div>
     </div>
+
 </div>
 {% endblock %}
