@@ -1,15 +1,23 @@
-.maintenance-content{
-    display: flex;
-    align-items: baseline;
-    margin-bottom: 11px;
-    h2{
-        margin-left: 7px;
-    }
+.maintenance-wrapper {
+  padding: 0 32px;
+  @media screen and (min-width: $x-large) {
+    padding: 0;
+  }
 }
+
+.maintenance-content{
+  display: flex;
+  align-items: baseline;
+  margin: 20px 0;
+  h2{
+    margin-left: 7px;
+  }
+}
+
 .list-maintenance{
-    li {
-        font-family: $font-family-base;
-        list-style: circle;
-        margin-bottom: 1.5%;
-    }
+  li {
+    font-family: $font-family-base;
+    list-style: circle;
+    margin-bottom: 20px;
+  }
 }
