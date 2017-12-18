@@ -1,11 +1,21 @@
 .info-vega {
   padding: 0 20px;
   margin-top: 20px;
+
   h1{
     text-align: center;
+    @media screen and (min-width: $medium) {
+      font-size: 44px;
+    }
   }
+
   p{
     text-align: center;
+    @media screen and (min-width: $medium) {
+      width: 85%;
+      margin: 0 auto;
+      text-align: justify;
+    }
   }
 }
 .image-support{
@@ -16,15 +26,4 @@
 .image-vega{
   margin-top: 64px;
   text-align: center;
-}
-@media screen and( min-width: 700px) {
-  .info-vega{
-    h1{
-      font-size: 44px;
-    }
-    p{
-      width: 85%;
-      margin: 0 auto;
-    }
-  }
 }
