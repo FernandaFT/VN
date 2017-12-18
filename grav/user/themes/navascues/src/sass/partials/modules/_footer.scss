@@ -79,3 +79,14 @@
         order: 1;
     };
 }
+
+.svg:hover {
+	cursor: pointer;
+	filter: invert(86%) sepia(14%) saturate(955%) hue-rotate(121deg) brightness(93%) contrast(87%);
+}
+
+.questions-footer {
+    a:hover {
+        color: $c-lightgreen;
+    }
+};

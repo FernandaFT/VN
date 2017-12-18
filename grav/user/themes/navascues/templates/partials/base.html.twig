@@ -12,7 +12,7 @@
 
     <link rel="icon" type="image/png" href="{{ url('theme://images/logo.png') }}" />
     <link rel="canonical" href="{{ page.url(true, true) }}" />
-
+    
     {% block stylesheets %}
         {% do assets.addCss('https://unpkg.com/purecss@1.0.0/build/pure-min.css', 100) %}
         {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 99) %}
@@ -67,7 +67,7 @@
                 Vega Navascués?</p>
                 <p>¿Qué características tiene la plata?</p>
                 <p>¿Qué tipos de plata hay?</p>
-                <a>Ver más <strong>Preguntas Frecuentes</strong></a>
+                <a href="#">Ver más <strong>Preguntas Frecuentes</strong></a>
             </div>
             <div class= "care-footer">
                 <h3>Cuidado de piezas</h3>
@@ -80,12 +80,12 @@
                 <p>¿Nos quiere preguntar algo?</p>
                 <p>¿Tiene una tienda y le gustaría mostrar nuestras joyas en su escaparate?</p>
                 <p>Aquí le dejamos nuestro contacto para que hablemos.</p>
-                <img class="social-media" src="{{url('theme://img/facebook-logo.svg')}}" alt="logo facebook">
-                <img class="social-media" src="{{url('theme://img/facebook-logo.svg')}}" alt="logo facebook">
-                <img class="social-media" src="{{url('theme://img/facebook-logo.svg')}}" alt="logo facebook">
-                <img class="social-media" src="{{url('theme://img/facebook-logo.svg')}}" alt="logo facebook">
-                <img class="social-media" src="{{url('theme://img/facebook-logo.svg')}}" alt="logo facebook">
-                <img class="social-media" src="{{url('theme://img/facebook-logo.svg')}}" alt="logo facebook">
+                <a href="https://www.facebook.com/VegaNavascues/"><img class="social-media svg" src="{{url('theme://img/facebook-logo.svg')}}" alt="logo facebook"></a>
+                <a href="https://www.pinterest.ca/veganavascues/vega-navascu%C3%A9s-joyer%C3%ADajoyeriajewelry/"><img class="social-media svg" src="{{url('theme://img/pinterest-logo.svg')}}" alt="logo pinterest"></a>
+                <a href="#"><img class="social-media svg" src="{{url('theme://img/email-logo.svg')}}" alt="logo email"></a>
+                <a href="#"><img class="social-media svg" src="{{url('theme://img/behance-logo.svg')}}" alt="logo behance"></a>
+                <a href="https://www.instagram.com/veganavascues_joyeria/"><img class="social-media svg" src="{{url('theme://img/instagram-logo.svg')}}" alt="logo instagram"></a>
+                <a href="https://www.etsy.com/es/shop/VegaNavascues?ref=profile_shopicon"><img class="social-media svg" src="{{url('theme://img/etsy-logo.svg')}}" alt="logo etsy"></a>   
             </div>
             
             <div class="logo-footer">
