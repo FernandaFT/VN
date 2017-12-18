@@ -72,8 +72,6 @@ form:
                   type: file
                   label: First Image left
                   destination: 'self@'
-                  limit: 1
-                  filesize: 1
                   remove: true
                   accept:
                     - '*'
@@ -81,7 +79,5 @@ form:
                   type: file
                   label: Second Image right (not requiere)
                   destination: 'self@'
-                  limit: 1
-                  filesize: 1
                   accept:
                     - '*'   

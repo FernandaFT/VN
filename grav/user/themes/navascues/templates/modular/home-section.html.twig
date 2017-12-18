@@ -6,10 +6,12 @@
         <img src="{{ url(page.header.leftImage|keys|first) }}" alt="">   
       </div>
       <div class="bg-info">
-        <h1>{{ page.header.sectionTitle }}</h1>
-        {% if grav.language.getActive == 'es' %}
+        <div>
+          <h1>{{ page.header.sectionTitle }}</h1>
+          {% if grav.language.getActive == 'es' %}
           <a class="button button-pink"href="{{base_url}}{{header.redirectPage}}">Ver más</a>
-        {% endif %}
+          {% endif %}
+        </div>
       </div>
       {% if (page.header.rightImage|first).path %}
         <div>
@@ -17,18 +19,9 @@
         </div>
       {% endif %}    
     </section> 
-    <section class="learn-more">
-      <div>
-        <h1>¿Quieres conocer más sobre nuestros productos?</h1>
-        <p>Conozca más sobre nuestros productos descargando el siguiente catálogo</p>
-        <a href="">Descargar Catálogo</a>
-      </div>
-    </section> 
-   
-
     {% if grav.language.getActive == 'en' %}
       <a href="{{base_url}}{{header.redirectPage}}">More</a>
     {% endif %}
-
 </div>
+
 
