@@ -1,45 +1,46 @@
 .section-frequent-doubts{
-    h4{
-        font-weight: $font-family-contrast-regular;
-    }
-    li{
-        padding: 20px 0;
-        border-bottom:: 2px solid #81D8D0;
-        cursor: pointer;
-    }
+  padding: 0 20px;
+  h4{
+    font-weight: $font-family-contrast-regular;
+  }
+  li{
+    padding: 20px 0;
+    border-bottom:: 2px solid #81D8D0;
+    cursor: pointer;
+  }
 }
 .title-color{
-    color:#81D8D0;
+  color:#81D8D0;
 }
 .question-answer{
-    padding-top: 10px;
-    font-size: 11px;
+  padding-top: 10px;
+  font-size: 15px;
 }
 .hide-answer{
-    display: none;
+  display: none;
 }
 .show-answer{
-    display: block;
+  display: block;
 }
 em {
-    border: solid #81D8D0;
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 3px;
-    float: right;
-    position: relative;
-    top: 10px;
-    cursor: pointer;
+  border: solid #81D8D0;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  float: right;
+  position: relative;
+  top: 10px;
+  cursor: pointer;
 }
 .down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 @media screen and( min-width: 700px ) {
-    h4{
-        font-size: 20px;
-    }
-    .question-answer{
-        font-size: 15px;
-    }  
+  h4{
+    font-size: 20px;
+  }
+  .question-answer{
+    font-size: 15px;
+  }  
 }
