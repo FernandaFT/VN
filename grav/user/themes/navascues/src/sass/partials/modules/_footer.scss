@@ -4,9 +4,12 @@
   margin-top: 100px;  
 }
 
+.logo-size {
+  font-size: 13px;
+}
 .container-info-footer {
   width: 100%;
-  padding: 10px 20px;
+  padding: 40px 20px;
 
   @media screen and (min-width: $medium) {
     display: flex;
