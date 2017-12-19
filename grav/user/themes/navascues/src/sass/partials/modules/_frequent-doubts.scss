@@ -12,6 +12,11 @@
 .title-color{
   color:#81D8D0;
 }
+.question-tittle {
+  @media screen and (min-width: $medium) {
+    font-size: 21px;
+  }   
+}
 .question-answer{
   padding-top: 10px;
   font-size: 15px;
