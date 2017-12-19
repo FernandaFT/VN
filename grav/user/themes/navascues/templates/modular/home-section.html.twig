@@ -9,7 +9,10 @@
         <div>
           <h1>{{ page.header.sectionTitle }}</h1>
           {% if grav.language.getActive == 'es' %}
-          <a class="button button-pink"href="{{base_url}}{{header.redirectPage}}">Ver más</a>
+          <a class="button button-pink" href="{{base_url}}{{header.redirectPage}}">Ver más</a>
+          {% endif %}
+          {% if grav.language.getActive == 'en' %}
+          <a class="button button-pink" href="{{base_url}}{{header.redirectPage}}">More</a>
           {% endif %}
         </div>
       </div>
@@ -18,10 +21,7 @@
           <img class="last-image" src="{{ url(page.header.rightImage|keys|first) }}" alt="">
         </div>
       {% endif %}    
-    </section> 
-    {% if grav.language.getActive == 'en' %}
-      <a href="{{base_url}}{{header.redirectPage}}">More</a>
-    {% endif %}
+    </section>    
 </div>
 
 
