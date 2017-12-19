@@ -1,8 +1,8 @@
 .holder {
-    @media screen and (min-width: $medium) {
+    @media screen and (min-width: $small) {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
+        padding: 20px;
     }
 }
 
@@ -15,16 +15,21 @@
 }
 
 .jewel-list {
-    @media screen and (min-width: $medium) {
-        width: calc(100% * (1/3))
+    @media screen and (min-width: $small) {
+        width: 40%;
+        margin: 10px;
+    }
+    @media screen and (min-width: $large) {
+        width: 30%;
+        margin: 10px;
     }
 }
 
 .jewel-list-item {
     background-color: #84d8d0;
-    margin: 5px 0;
+    margin: 20px 0;
 
-    @media screen and (min-width: $medium) {
+    @media screen and (min-width: $small) {
         background-color: transparent;
         margin: 5px 0;
     }
@@ -37,45 +42,57 @@
     vertical-align: middle;
    
     img {   
-        width: 100%;
+        width: 160px;
+        height: 160px;
         vertical-align: top;
 
-        @media screen and (min-width: $medium) {
+        @media screen and (min-width: $small) {
             vertical-align: 0;
             max-height: 100%;
+            width: 100%;
+            height: 200px;
+        }
+        @media screen and (min-width: $large) {
+            vertical-align: 0;
+            max-height: 100%;
+            width: 100%;
+            height: 300px;
         }
     }
 
-    @media screen and (min-width: $medium) {
-        width: 0;
-    }
+    
 }
 
 .jewel-description-item {
     text-align: center;
-    margin: 10% 0;
-    padding: 2%;
-
+    padding: 20px;
+    background-color: #84d8d0;
     p {
         font-size:  15px;
-        margin: 50px 0;
+        margin: 20px 0;
+        @media screen and (min-width: $small) {
+            margin: 10px 0;
+        }
     }
 
     a {
         border-bottom: 1px solid #000;
         font-size: 13px;
     }
+    @media screen and (min-width: $small) {
+        width: 100%;
+        padding: 15px;
+    }
 
-    @media screen and (min-width: $medium) {
+    @media screen and (min-width: $large) {
         display: none;
-        background-color: #84d8d0;
     }
 
 }
 
 .jewel-description-desktop {
     display: none;
-    @media screen and (min-width: $medium) {
+    @media screen and (min-width: $large) {
         display: block;
         position: absolute;
         background-color: #84d8d0;
@@ -85,7 +102,7 @@
         transition: height 0.5s ease-out;
 
         span {
-            margin: 50px;
+            margin: 10px 0 50px;
             text-align: center;
             display: block;
             
@@ -117,9 +134,12 @@
 }
 
 .jewel-image-item {
-    @media screen and (min-width: $medium) {
+    @media screen and (min-width: $small) {
         width: 100%;
         position: relative;
+        height: 200px;
+    }
+    @media screen and (min-width: $large) {
         height: 300px;
     
         &:hover {
