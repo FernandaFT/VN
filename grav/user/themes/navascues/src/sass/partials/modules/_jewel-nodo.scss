@@ -1,153 +1,175 @@
 .holder {
-    @media screen and (min-width: $small) {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 20px;
-    }
-}
-
-.jewelry-page-title {
-    border-bottom: 2px solid #84d8d0;
-
-    h1 {
-        font-size: 25px;
-    }
+  @media screen and (min-width: $small) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
 }
 
 .jewel-list {
-    @media screen and (min-width: $small) {
-        width: 40%;
-        margin: 10px;
-    }
-    @media screen and (min-width: $large) {
-        width: 30%;
-        margin: 10px;
-    }
+  @media screen and (min-width: $small) {
+    width: 40%;
+    margin: 10px;
+  }
+  @media screen and (min-width: $large) {
+    width: 30%;
+    margin: 10px;
+  }
 }
 
 .jewel-list-item {
-    background-color: #84d8d0;
-    margin: 20px 0;
+  background-color: $c-lightgreen;
+  margin: 20px 0;
 
-    @media screen and (min-width: $small) {
-        background-color: transparent;
-        margin: 5px 0;
-    }
+  @media screen and (min-width: $small) {
+    background-color: transparent;
+    margin: 5px 0;
+  }
 }
 
 .jewel-item {
-    display: inline-block;
-    width: 50%;
-    overflow: hidden;
-    vertical-align: middle;
-   
-    img {   
-        width: 160px;
-        height: 160px;
-        vertical-align: top;
+  display: inline-block;
+  width: 50%;
+  overflow: hidden;
+  vertical-align: middle;
+  
+  img {   
+    width: 160px;
+    height: 160px;
+    vertical-align: top;
 
-        @media screen and (min-width: $small) {
-            vertical-align: 0;
-            max-height: 100%;
-            width: 100%;
-            height: 200px;
-        }
-        @media screen and (min-width: $large) {
-            vertical-align: 0;
-            max-height: 100%;
-            width: 100%;
-            height: 300px;
-        }
+    @media screen and (min-width: $small) {
+      vertical-align: 0;
+      max-height: 100%;
+      width: 100%;
+      height: 200px;
     }
-
-    
+    @media screen and (min-width: $large) {
+      vertical-align: 0;
+      max-height: 100%;
+      width: 100%;
+      height: 200px;
+    }
+    @media screen and (min-width: $x-large) {
+      height: 300px;
+    }
+  }
 }
 
 .jewel-description-item {
-    text-align: center;
-    padding: 20px;
-    background-color: #84d8d0;
-    p {
-        font-size:  15px;
-        margin: 20px 0;
-        @media screen and (min-width: $small) {
-            margin: 10px 0;
-        }
-    }
-
-    a {
-        border-bottom: 1px solid #000;
-        font-size: 13px;
-    }
+  text-align: center;
+  padding: 20px;
+  background-color: $c-lightgreen;
+  p {
+    font-size:  15px;
+    margin: 20px 0;
     @media screen and (min-width: $small) {
-        width: 100%;
-        padding: 15px;
+      margin: 10px 0;
     }
+  }
 
-    @media screen and (min-width: $large) {
-        display: none;
-    }
+  a {
+    border-bottom: 1px solid #000;
+    font-size: 13px;
+  }
+  @media screen and (min-width: $small) {
+    width: 100%;
+    padding: 15px;
+    border-radius: 0 0 5px 5px;
+  }
+
+  @media screen and (min-width: $large) {
+    display: none;
+  }
 
 }
 
 .jewel-description-desktop {
-    display: none;
-    @media screen and (min-width: $large) {
-        display: block;
-        position: absolute;
-        background-color: #84d8d0;
-        width: 100%;
-        bottom: 0;
-        height: 0;
-        transition: height 0.5s ease-out;
+  display: none;
+  @media screen and (min-width: $large) {
+    display: block;
+    position: absolute;
+    background-color: $c-lightgreen;
+    width: 100%;
+    bottom: 0;
+    height: 0;
+    transition: height 0.5s ease-out;
 
-        span {
-            margin: 10px 0 50px;
-            text-align: center;
-            display: block;
-            
-            a {
-                text-decoration: underline;
-            }
-        }
+    span {
+      margin: 10px 0 50px;
+      text-align: center;
+      display: block;
+      
+      a {
+        text-decoration: underline;
+      }
     }
-}
-
-.jewel-details-node {
-    h1 {
-        text-align: center;
-    }
-
-    li, p, h3 {
-        margin: 30px 0;
-    }
-
-    p, li {
-        display: inline-block;
-        font-size: 14px;
-    }
-
-}
-
-.jewel-details {
-    border-bottom: 2px solid #84d8d0;
+  }
 }
 
 .jewel-image-item {
-    @media screen and (min-width: $small) {
-        width: 100%;
-        position: relative;
-        height: 200px;
+  @media screen and (min-width: $small) {
+    width: 100%;
+    position: relative;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+  }
+  @media screen and (min-width: $large) {
+    border-radius: 5px;
+    &:hover {
+  
+      .jewel-description-desktop {
+        height: 40%;
+      }
     }
-    @media screen and (min-width: $large) {
-        height: 300px;
-    
-        &:hover {
-    
-            .jewel-description-desktop {
-                height: 30%;
-            }
-        }
+  }
+  @media screen and (min-width: $x-large) {
+    height: 300px;
+  
+    &:hover {
+  
+      .jewel-description-desktop {
+        height: 30%;
+      }
     }
-    
+  }
+}
+
+.jewel-container {
+  margin: 50px 0 20px;
+}
+
+.slider {
+  @media screen and (min-width: $large) {
+    display: inline-block;
+    width: 50%;
+    height: 700px;
+  }
+}
+
+.jewel-details-node {
+  @media screen and (min-width: $large) {
+    display: inline-block;
+    margin-left: 20px;
+    width: 40%;
+    vertical-align: top;
+  }
+  h1 {
+    text-align: center;
+    border-bottom: 2px solid $c-lightgreen;
+  }
+
+  li, p, h3, h2 {
+    margin: 10px 20px;
+  }
+
+  p, li {
+    display: inline-block;
+    font-size: 14px;
+  }
+}
+
+.jewel-details {
+  border-bottom: 2px solid $c-lightgreen;
+  margin: 20px 0;
 }
