@@ -1,0 +1,96 @@
+.footer {
+  background-color: #eee;
+  width: 100%;
+  margin-top: 100px;  
+}
+
+.logo-size {
+  font-size: 13px;
+}
+.container-info-footer {
+  width: 100%;
+  padding: 40px 20px;
+
+  @media screen and (min-width: $medium) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+   
+  div {
+    padding: 25px 0;
+
+    @media screen and (min-width: $medium) {
+      padding: 20px 18px;
+    }
+
+    @media screen and (min-width: $large) {
+      width: 300px;
+      padding-left: 50px;
+    }
+  } 
+  p {
+    font-size: 12px;
+    margin: 10px 0;
+    font-family: $font-family-base; 
+    @media screen and (min-width: $large) {
+      font-size: $font-size-text;
+    }    
+  }
+
+    
+  h3 {
+    font-family: $font-family-contrast;
+    font-weight: 700;
+    @media screen and (min-width: $x-large) {
+      font-size: 25px;
+    }    
+  }
+}
+
+.social-media {
+  width: 25px;
+  margin-top: 14px;
+}
+
+.logo-footer {
+  margin: auto;
+  width: 50%;
+  @media screen and (min-width: $medium) {
+    order: 4;
+    margin: 0;
+  }
+  @media screen and (min-width: $large) {
+    margin: 0;
+  }
+  @media screen and (min-width: $x-large) {
+    margin: 0;
+  }
+
+  a {
+    text-align: center;
+  }  
+}
+
+@media screen and (min-width: $medium) {
+  .questions-footer {
+    order: 2;
+  };
+  .care-footer {
+    order: 3;
+  };
+  .contact-footer {
+    order: 1;
+  };
+}
+
+.svg:hover {
+	cursor: pointer;
+	filter: invert(86%) sepia(14%) saturate(955%) hue-rotate(121deg) brightness(93%) contrast(87%);
+}
+
+.questions-footer {
+  a:hover {
+    color: $c-lightgreen;
+  }
+};

@@ -1,4 +1,5 @@
 ---
+title: 'Care of the pieces'
 care_first_title: Precautions
 care_first_list:
     -
@@ -39,6 +40,18 @@ care_third_list:
         care_third_item: 'It is advisable to check with some frequency the setting of the stones, to make sure that they are all well placed and to prevent them from falling and getting lost.'
     -
         care_third_item: 'Avoid that the chains are closed and flat so that no knots are formed.'
+twitterenable: true
+twittercardoptions: summary
+articleenabled: false
+musiceventenabled: false
+orgaenabled: false
+eventenabled: false
+personenabled: false
+restaurantenabled: false
+restaurant:
+    acceptsReservations: 'yes'
+    priceRange: $
+facebookenable: true
 care_first_icon:
     user/pages/05.atencion-al-cliente/02.cuidado-de-la-piezas/precaution.png:
         name: precaution.png
@@ -69,7 +82,6 @@ maintenance:
                 type: image/png
                 size: 635
                 path: user/pages/05.atencion-al-cliente/03.cuidado-de-la-piezas/precaution.png
-title: 'Cuidado de la piezas'
 ---
 
 * Tómese el tiempo necesario para manipular sus joyas con precaución.
