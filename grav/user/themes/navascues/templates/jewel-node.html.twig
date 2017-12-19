@@ -56,57 +56,57 @@
 
 	{% block content %}
 		<div class="limiter">
-			
-			<div class="slider">
-				{% include 'modular/lightslider.html.twig' %}
-			</div>
-    		<div class="jewel-details-node">
-				
-				
-    		    <h1>{{ page.title }}</h1>
-	
-				{% if page.content %}
-					<div class="jewel-details">
-						{% if grav.language.getActive == 'es' %}
-							<h2>Descripcion y Detalles</h2>
+			<div class="jewel-container">
+				<div class="slider">
+					{% include 'modular/lightslider.html.twig' %}
+				</div><div class="jewel-details-node">
+					
+					
+    			<h1>{{ page.title }}</h1>
+		
+					{% if page.content %}
+						<div class="jewel-details">
+							{% if grav.language.getActive == 'es' %}
+								<h2>Descripción y Detalles</h2>
     					{% endif %}
     					{% if grav.language.getActive == 'en' %}
-							<h2>Descripcion and Details</h2>
+								<h2>Description and Details</h2>
     					{% endif %}
-			
-    		    		{{ page.content}}
-    		    	</div>
-				{% endif %}
-				
-				
-				
-				{% if header.price %}
-					<div class="jewel-details">
-	
-						{% if grav.language.getActive == 'es' %}
-							<h3>Precio: {{ header.price }}</h3>
-    					{% endif %}
-			
-    		    		{% if grav.language.getActive == 'en' %}
-							<h3>Price: {{ header.price }}</h3>
-						{% endif %}
-
-					</div>
-				{% endif %}
-
-				{% if grav.language.getActive == 'es' %}
-					<h3>Contáctenos:</h3>
-					<p>Correo:</p>
-					<a href="veganavascues@gmail.com">veganavascues@gmail.com</a>
-    			{% endif %}
-
-				{% if grav.language.getActive == 'en' %}
-					<h3>Contact us:</h3>
-					<p>Mail:</p>
-					<a href="veganavascues@gmail.com">veganavascues@gmail.com</a>
-    			{% endif %}
+					
+    			    {{ page.content}}
+    			  </div>
+					{% endif %}
+					
+					
+					
+					{% if header.price %}
+						<div class="jewel-details">
 		
-			</div>
+							{% if grav.language.getActive == 'es' %}
+								<h3>Precio: {{ header.price }}</h3>
+    						{% endif %}
+				
+    			    		{% if grav.language.getActive == 'en' %}
+								<h3>Price: {{ header.price }}</h3>
+							{% endif %}
+	
+						</div>
+					{% endif %}
+	
+					{% if grav.language.getActive == 'es' %}
+						<h3>Contáctenos:</h3>
+						<p>Correo:</p>
+						<a href="veganavascues@gmail.com">veganavascues@gmail.com</a>
+    				{% endif %}
+	
+					{% if grav.language.getActive == 'en' %}
+						<h3>Contact us:</h3>
+						<p>Mail:</p>
+						<a href="veganavascues@gmail.com">veganavascues@gmail.com</a>
+    				{% endif %}
+			
+				</div>
+			</div>	
 		</div>
 
 	{% endblock %}
