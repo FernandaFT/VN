@@ -10,4 +10,16 @@ window.addEventListener("load", function(){
 
         });
     };
+
+    var $menuToggle = $('#menu-toggle');
+    var $navigation = $('.main-nav');
+    $menuToggle.click(function () {
+        $menuToggle.toggleClass('menu-toggle-active');
+        $navigation.toggle()
+    });
+
+    var $menuTitle = $('.menu-title');
+    $menuTitle.click(function () {
+        $navigation.toggle()
+    })
 });

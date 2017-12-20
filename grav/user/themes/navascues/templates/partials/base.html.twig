@@ -3,134 +3,137 @@
 <html lang="{{ grav.language.getActive ?: theme_config.default_lang }}">
 <head>
 {% block head %}
-    <meta charset="utf-8" />
-    <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+  <meta charset="utf-8" />
+  <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    {% include 'partials/metadata.html.twig' %}
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% include 'partials/metadata.html.twig' %}
 
-    <link rel="icon" type="image/png" href="{{ url('theme://images/logo.png') }}" />
-    <link rel="canonical" href="{{ page.url(true, true) }}" />
-    
-    {% block stylesheets %}
-        {% do assets.addCss('https://unpkg.com/purecss@1.0.0/build/pure-min.css', 100) %}
-        {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 99) %}
-        {% do assets.addCss('theme://css/custom.css', 98) %}
-        {% do assets.addCss('theme://css/aboutUs.css', 97) %}
-        {% do assets.addCss('theme://css-compiled/styles.css', 96) %}
-    {% endblock %}
-    {{ assets.css() }}
+  <link rel="icon" type="image/png" href="{{ url('theme://images/logo.png') }}" />
+  <link rel="canonical" href="{{ page.url(true, true) }}" />
+  
+  {% block stylesheets %}
+    {% do assets.addCss('https://unpkg.com/purecss@1.0.0/build/pure-min.css', 100) %}
+    {% do assets.addCss('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', 99) %}
+    {% do assets.addCss('theme://css/custom.css', 98) %}
+    {% do assets.addCss('theme://css/aboutUs.css', 97) %}
+    {% do assets.addCss('theme://css-compiled/styles.css', 96) %}
+  {% endblock %}
+  {{ assets.css() }}
 
-    {% block javascripts %}
-    {% do assets.addJs('https://code.jquery.com/jquery-1.8.3.min.js', 101) %}
-        {% do assets.addJs('jquery', 100) %}
-        {% do assets.addJs('theme://js/vega.js') %}
-    {% endblock %}
-    {{ assets.js() }}
-    {% include 'partials/langswitcher.html.twig' %}
+  {% block javascripts %}
+  {% do assets.addJs('https://code.jquery.com/jquery-1.8.3.min.js', 101) %}
+    {% do assets.addJs('jquery', 100) %}
+    {% do assets.addJs('theme://js/vega.js') %}
+  {% endblock %}
+  {{ assets.js() }}
+  {% include 'partials/language-selector.hreflang.html.twig' %}
 {% endblock head%}
 </head>
+
 <body id="top" class="{{ page.header.body_classes }}">
-
 {% block header %}
-    <div class="header">
-        <div class="wrapper padding">
+  <div class="header">
+    <div class="wrapper padding">
+      <div class="limiter">
+        <div class="header-nav">
+          {% include 'partials/language-selector.html.twig' %}
+          <div class="logo-header">
             <a class="logo left" href="{{ base_url == '' ? '/' : base_url }}">
-                <img class="logo-image" src="{{url('theme://img/logo-Vega.png')}}" alt="logo Vega Navascués">
-                <p class="name-logo">{{ config.site.title }}</p> 
+              <img class="logo-image" src="{{url('theme://img/logo-Vega.png')}}" alt="logo Vega Navascués">
+              <p class="name-logo">{{ config.site.title }}</p> 
             </a>
-            {% block header_navigation %}
-            <nav class="main-nav">
-                {% include 'partials/navigation.html.twig' %}
-            </nav>
-            {% endblock %}
+            <div class="menu-toggle" id="menu-toggle">
+              <div class="first-menu-line"></div>
+              <div class="second-menu-line"></div>
+              <div class="third-menu-line"></div>
+            </div>
+          </div>
         </div>
+      </div>
+      {% block header_navigation %}
+        <div class="main-nav">
+          {% include 'partials/navigation.html.twig' %}
+        </div>
+      {% endblock %}
     </div>
+  </div>
 {% endblock %}
-
 {% block body %}
-    <section id="body">
-        <div class="wrapper padding">
-        {% block content %}{% endblock %}
-        </div>
-    </section>
+  <section id="body">
+    <div class="wrapper padding">
+      {% block content %}{% endblock %}
+    </div>
+  </section>
 {% endblock %}
 
 {% block footer %}
-    <footer class="footer">
-        <div class="container-info-footer">
-           
-            <div class= "questions-footer">
+  <footer class="footer">
+    <div class="container-info-footer">
+      <div class= "questions-footer">
+        {% if grav.language.getActive == 'es' %}
+          <h3>Preguntas Frecuentes</h3>
+          <p>¿Cómo puedo comprar una joya de Vega Navascués?</p>
+          <p>¿Qué características tiene la plata?</p>
+          <p>¿Qué tipos de plata hay?</p>
+          <a href="#">Ver más <strong>Preguntas Frecuentes</strong></a>
+        {% endif %}
+        {% if grav.language.getActive == 'en' %}
+          <h3>Frequent Questions</h3>
+          <p>How can I buy a gem of Vega Navascués?</p>
+          <p>What are the characteristics of silver?</p>
+          <p>What types of silver are there?</p>
+          <a href="#">See more: <strong>Frequent questions</strong></a>
+        {% endif %}
+      </div>
+      <div class= "care-footer">
+        {% if grav.language.getActive == 'es' %}
+          <h3>Cuidado de piezas</h3>
+          <p>Precauciones</p>
+          <p>Limpieza</p>
+          <p>Conservación</p>
+        {% endif %}
+        {% if grav.language.getActive == 'en' %}
+          <h3>Care of the pieces</h3>
+          <p>Precautions</p>
+          <p>Cleaning</p>
+          <p>Conservation</p>
+        {% endif %}
+      </div>
+      <div class="contact-footer">
+        {% if grav.language.getActive == 'es' %}
+          <h3>Contacto</h3>
+          <p>¿Nos quiere preguntar algo?</p>
+          <p>¿Tiene una tienda y le gustaría mostrar nuestras joyas en su escaparate?</p>
+          <p>Aquí le dejamos nuestro contacto para que hablemos.</p>
+        {% endif %}
+        {% if grav.language.getActive == 'en' %}
+          <h3>Contact</h3>
+          <p>Do you want to ask us something?</p>
+          <p>Do you have a store and would you like to show our jewelry in your shop window?</p>
+          <p>Here we leave our contact so we can talk.</p>
+        {% endif %}
 
-                {% if grav.language.getActive == 'es' %}
-                    <h3>Preguntas Frecuentes</h3>
-                    <p>¿Cómo puedo comprar una joya de Vega Navascués?</p>
-                    <p>¿Qué características tiene la plata?</p>
-                    <p>¿Qué tipos de plata hay?</p>
-                    <a href="#">Ver más <strong>Preguntas Frecuentes</strong></a>
-                {% endif %}
-                {% if grav.language.getActive == 'en' %}
-                    <h3>Frequent Questions</h3>
-                    <p>How can I buy a gem of Vega Navascués?</p>
-                    <p>What are the characteristics of silver?</p>
-                    <p>What types of silver are there?</p>
-                    <a href="#">See more: <strong>Frequent questions</strong></a>
-                {% endif %}
-
-
-            </div>
-            <div class= "care-footer">
-
-                {% if grav.language.getActive == 'es' %}
-                    <h3>Cuidado de piezas</h3>
-                    <p>Precauciones</p>
-                    <p>Limpieza</p>
-                    <p>Conservación</p>
-                {% endif %}
-                {% if grav.language.getActive == 'en' %}
-                    <h3>Care of the pieces</h3>
-                    <p>Precautions</p>
-                    <p>Cleaning</p>
-                    <p>Conservation</p>
-                {% endif %}
-
-            </div>
-            <div class="contact-footer">
-
-                {% if grav.language.getActive == 'es' %}
-                    <h3>Contacto</h3>
-                    <p>¿Nos quiere preguntar algo?</p>
-                    <p>¿Tiene una tienda y le gustaría mostrar nuestras joyas en su escaparate?</p>
-                    <p>Aquí le dejamos nuestro contacto para que hablemos.</p>
-                {% endif %}
-                {% if grav.language.getActive == 'en' %}
-                    <h3>Contact</h3>
-                    <p>Do you want to ask us something?</p>
-                    <p>Do you have a store and would you like to show our jewelry in your shop window?</p>
-                    <p>Here we leave our contact so we can talk.</p>
-                {% endif %}
-
-                <a href="https://www.facebook.com/VegaNavascues/"><img class="social-media svg" src="{{url('theme://img/facebook-logo.svg')}}" alt="logo facebook"></a>
-                <a href="https://www.pinterest.ca/veganavascues/vega-navascu%C3%A9s-joyer%C3%ADajoyeriajewelry/"><img class="social-media svg" src="{{url('theme://img/pinterest-logo.svg')}}" alt="logo pinterest"></a>
-                <a href="veganavascues@gmail.com"><img class="social-media svg" src="{{url('theme://img/email-logo.svg')}}" alt="logo email"></a>
-                <a href="#"><img class="social-media svg" src="{{url('theme://img/behance-logo.svg')}}" alt="logo behance"></a>
-                <a href="https://www.instagram.com/veganavascues_joyeria/"><img class="social-media svg" src="{{url('theme://img/instagram-logo.svg')}}" alt="logo instagram"></a>
-                <a href="https://www.etsy.com/es/shop/VegaNavascues?ref=profile_shopicon"><img class="social-media svg" src="{{url('theme://img/etsy-logo.svg')}}" alt="logo etsy"></a>   
-            </div>
-            
-            <div class="logo-footer">
-                <a class="logo left" href="{{ base_url == '' ? '/' : base_url }}">
-                    <img class="logo-image" src="{{url('theme://img/logo-Vega.png')}}" alt="logo Vega Navascués">
-                    <h1 class="name-logo">{{ config.site.title }}</h1> 
-                </a> 
-            </div>
-        </div>
-    </footer>
+        <a href="https://www.facebook.com/VegaNavascues/"><img class="social-media svg" src="{{url('theme://img/facebook-logo.svg')}}" alt="logo facebook"></a>
+        <a href="https://www.pinterest.ca/veganavascues/vega-navascu%C3%A9s-joyer%C3%ADajoyeriajewelry/"><img class="social-media svg" src="{{url('theme://img/pinterest-logo.svg')}}" alt="logo pinterest"></a>
+        <a href="veganavascues@gmail.com"><img class="social-media svg" src="{{url('theme://img/email-logo.svg')}}" alt="logo email"></a>
+        <a href="#"><img class="social-media svg" src="{{url('theme://img/behance-logo.svg')}}" alt="logo behance"></a>
+        <a href="https://www.instagram.com/veganavascues_joyeria/"><img class="social-media svg" src="{{url('theme://img/instagram-logo.svg')}}" alt="logo instagram"></a>
+        <a href="https://www.etsy.com/es/shop/VegaNavascues?ref=profile_shopicon"><img class="social-media svg" src="{{url('theme://img/etsy-logo.svg')}}" alt="logo etsy"></a>   
+      </div>
+      <div class="logo-footer">
+        <a class="logo left" href="{{ base_url == '' ? '/' : base_url }}">
+          <img class="logo-image" src="{{url('theme://img/logo-Vega.png')}}" alt="logo Vega Navascués">
+          <h1 class="name-logo">{{ config.site.title }}</h1> 
+        </a> 
+      </div>
+    </div>
+  </footer>
 {% endblock %}
 
 {% block bottom %}
-    {{ assets.js('bottom') }}
+  {{ assets.js('bottom') }}
 {% endblock %}
 
 </body>
