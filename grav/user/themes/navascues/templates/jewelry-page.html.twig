@@ -10,10 +10,10 @@
 				<ul class="holder">
 					{% for child in collection %}
 						<li class="jewel-list">
-			        		{% include 'jewel-node.html.twig' with {'category':page, 'page':child, 'truncate':true} %}
+			        	{% include 'jewel-node.html.twig' with {'category':page, 'page':child, 'truncate':true} %}
 			    		</li>
-			  		{% endfor %}
-			  	</ul>
+			  	{% endfor %}
+			  </ul>
 			</div>
 		</div>
 	</div>

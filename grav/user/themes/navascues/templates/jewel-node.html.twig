@@ -7,13 +7,13 @@
 	
 			<div class="jewel-description-desktop">
 				<span>
-	        		<h3>{{ page.title }}</h3>
+	        <h3>{{ page.title }}</h3>
 			
-	        		{% if grav.language.getActive == 'es' %}
+	        {% if grav.language.getActive == 'es' %}
 						<p>Precio: {{ page.header.price }}</p>
-	    			{% endif %}
+	    		{% endif %}
 			
-	        		{% if grav.language.getActive == 'en' %}
+	        {% if grav.language.getActive == 'en' %}
 						<p>Price: {{ page.header.price }}</p>
 					{% endif %}
 					
@@ -22,7 +22,7 @@
 	    			{% endif %}
 					{% if grav.language.getActive == 'en' %}
 						<a class="button button-blue" href="{{ page.url }}">Read More</a>
-	    			{% endif %}
+	    		{% endif %}
 				</span>
 			</div>
 	
@@ -97,13 +97,13 @@
 						<h3>Contáctenos:</h3>
 						<p>Correo:</p>
 						<a href="veganavascues@gmail.com">veganavascues@gmail.com</a>
-    				{% endif %}
+    			{% endif %}
 	
 					{% if grav.language.getActive == 'en' %}
 						<h3>Contact us:</h3>
 						<p>Mail:</p>
 						<a href="veganavascues@gmail.com">veganavascues@gmail.com</a>
-    				{% endif %}
+    			{% endif %}
 			
 				</div>
 			</div>	
