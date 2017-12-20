@@ -2,21 +2,21 @@
 	{% set collection = page.collection() %}
 	
 	{% block content %}
-	<h1 class="general-title">{{ page.title }}</h1>
-	<div class="limiter">
-		<div class="wrapper-categories">
-
-			<div id="listing">
-				<ul class="holder">
-					{% for child in collection %}
-						<li class="jewel-list">
-			        		{% include 'jewel-node.html.twig' with {'category':page, 'page':child, 'truncate':true} %}
-			    		</li>
-			  		{% endfor %}
-			  	</ul>
+		<h1 class="general-title">{{ page.title }}</h1>
+		<div class="limiter">
+			<div class="wrapper-categories">
+	
+				<div id="listing">
+					<ul class="holder">
+						{% for child in collection %}
+							<li class="jewel-list">
+				        	{% include 'jewel-node.html.twig' with {'category':page, 'page':child, 'truncate':true} %}
+				    		</li>
+				  		{% endfor %}
+				  	</ul>
+				</div>
 			</div>
 		</div>
-	</div>
 	{% endblock %}
 
 {% endembed %}

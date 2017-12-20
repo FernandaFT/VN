@@ -19,7 +19,6 @@ form:
           type: hidden
         general:
           type: tab
-          ordering@: 0
           title: General
 
           fields:
