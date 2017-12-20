@@ -41,7 +41,7 @@ form:
               type: file
               label: Select a image to cover page
               destination: 'self@'
-              multiple: true
+              multiple: false
               filesize: 10
               accept:
                 - image/*

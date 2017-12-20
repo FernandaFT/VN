@@ -1,6 +1,7 @@
 ---
 title: Cometa
 price: '200'
+media_order: 'Cometa (1) (1).jpg,Cometa (2) (1).jpg'
 twitterenable: true
 twittercardoptions: summary
 articleenabled: false
@@ -14,11 +15,6 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    'user/pages/03.joyeria/03.pendientes/cometa/Cometa (2) (1).jpg':
-        name: 'Cometa (2) (1).jpg'
-        type: image/jpeg
-        size: 792075
-        path: 'user/pages/03.joyeria/03.pendientes/cometa/Cometa (2) (1).jpg'
     'user/pages/03.joyeria/03.pendientes/cometa/Cometa (1) (1).jpg':
         name: 'Cometa (1) (1).jpg'
         type: image/jpeg

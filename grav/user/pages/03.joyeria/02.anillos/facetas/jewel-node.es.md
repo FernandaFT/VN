@@ -19,10 +19,5 @@ myJewel:
         type: image/jpeg
         size: 152485
         path: 'user/pages/03.joyeria/02.anillos/facetas/Facetas (3).jpg'
-    'user/pages/03.joyeria/02.anillos/facetas/Facetas (4).jpg':
-        name: 'Facetas (4).jpg'
-        type: image/jpeg
-        size: 157772
-        path: 'user/pages/03.joyeria/02.anillos/facetas/Facetas (4).jpg'
 ---
 
