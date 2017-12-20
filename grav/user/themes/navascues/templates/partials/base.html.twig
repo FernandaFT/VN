@@ -28,7 +28,7 @@
     {% do assets.addJs('theme://js/vega.js') %}
   {% endblock %}
   {{ assets.js() }}
-  
+  {% include 'partials/language-selector.hreflang.html.twig' %}
 {% endblock head%}
 </head>
 
@@ -38,7 +38,7 @@
     <div class="wrapper padding">
       <div class="limiter">
         <div class="header-nav">
-          {% include 'partials/langswitcher.html.twig' %}
+          {% include 'partials/language-selector.html.twig' %}
           <div class="logo-header">
             <a class="logo left" href="{{ base_url == '' ? '/' : base_url }}">
               <img class="logo-image" src="{{url('theme://img/logo-Vega.png')}}" alt="logo Vega Navascués">
