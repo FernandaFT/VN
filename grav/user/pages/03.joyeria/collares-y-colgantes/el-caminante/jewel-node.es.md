@@ -1,12 +1,25 @@
 ---
 title: 'El caminante'
 price: 38€
+media_order: El-caminante-todas.jpg
+twitterenable: true
+twittercardoptions: summary
+articleenabled: false
+musiceventenabled: false
+orgaenabled: false
+eventenabled: false
+personenabled: false
+restaurantenabled: false
+restaurant:
+    acceptsReservations: 'yes'
+    priceRange: $
+facebookenable: true
 myJewel:
-    'user/pages/03.joyeria/collares-y-colgantes/el-caminante/El caminante (3).jpg':
-        name: 'El caminante (3).jpg'
+    user/pages/03.joyeria/collares-y-colgantes/el-caminante/El-caminante.jpg:
+        name: El-caminante.jpg
         type: image/jpeg
-        size: 653043
-        path: 'user/pages/03.joyeria/collares-y-colgantes/el-caminante/El caminante (3).jpg'
+        size: 754356
+        path: user/pages/03.joyeria/collares-y-colgantes/el-caminante/El-caminante.jpg
 ---
 
 * El caminante es un colgante moderno y desenfadado que aprovecha la curiosa forma del coral para darle personalidad.

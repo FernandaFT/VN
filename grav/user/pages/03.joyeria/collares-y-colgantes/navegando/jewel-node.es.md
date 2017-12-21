@@ -1,12 +1,25 @@
 ---
 title: Navegando
 price: 38€
+media_order: Navegando1.jpg
+twitterenable: true
+twittercardoptions: summary
+articleenabled: false
+musiceventenabled: false
+orgaenabled: false
+eventenabled: false
+personenabled: false
+restaurantenabled: false
+restaurant:
+    acceptsReservations: 'yes'
+    priceRange: $
+facebookenable: true
 myJewel:
-    'user/pages/03.joyeria/collares-y-colgantes/navegando/Navegando (14).jpg':
-        name: 'Navegando (14).jpg'
+    user/pages/03.joyeria/collares-y-colgantes/navegando/Navegando.jpg:
+        name: Navegando.jpg
         type: image/jpeg
-        size: 416332
-        path: 'user/pages/03.joyeria/collares-y-colgantes/navegando/Navegando (14).jpg'
+        size: 1670724
+        path: user/pages/03.joyeria/collares-y-colgantes/navegando/Navegando.jpg
 ---
 
 * Barquito de papel de corte divertido y actual.
