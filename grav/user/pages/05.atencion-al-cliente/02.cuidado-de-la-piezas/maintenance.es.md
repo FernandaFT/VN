@@ -1,6 +1,6 @@
 ---
 title: 'Cuidado de la piezas'
-care_first_title: Precausiones
+care_first_title: Precauciones
 care_first_list:
     -
         care_first_item: 'Tómese el tiempo necesario para manipular sus joyas con precaución.'
