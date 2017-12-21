@@ -1,5 +1,5 @@
 ---
-title: Anillos
+title: 'Necklaces and Pendants'
 visible: true
 content:
     items: '@self.children'

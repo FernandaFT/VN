@@ -1,6 +1,6 @@
 ---
-title: Corazoncito
-price: 20€
+title: Gotas
+price: 75€
 twitterenable: true
 twittercardoptions: summary
 articleenabled: false
@@ -15,8 +15,10 @@ restaurant:
 facebookenable: true
 ---
 
-Pendant Heart made in sterling silver 950
-The Corazoncito pendant projects affection and love with its sweetness</br>
-**Materials**:</br>
-**Dimensions**: Width: 15 mm Height: 15 mm</br>
+Set of pendant and earrings in sterling silver 950 and resin
+This juvenile style set is based on the shape of the water drops.</br>
+**Materials**: 950 sterling silver</br>
+**Dimensions**:</br>
+**Pendant**: Width: 15 mm Height: 60 mm</br>
+**Earrings**: Width: 9 mm Height: 35 mm</br>
 * Being an artisan piece, the measurements are always approximate

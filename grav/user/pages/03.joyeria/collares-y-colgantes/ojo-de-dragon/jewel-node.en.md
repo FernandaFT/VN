@@ -22,8 +22,8 @@ myJewel:
         path: 'user/pages/03.joyeria/collares-y-colgantes/ojo-de-dragon/Ojo de dragón (4).jpg'
 ---
 
-Dije en plata de ley 950 con piedra crisocola
-Es un vistoso y elegante dije de gran personalidad y presencia de estilo modernista.</br>
-**Materiales**: plata de ley 950 y crisocola</br>
-**Dimensiones**: Ancho: 35 mm Alto: 45 mm</br>
-*al ser una pieza artesanal, las medidas siempre son aproximadas
+I said in sterling silver 950 with stone crisocola
+It is a colorful and elegant statement of great personality and presence of modernist style.</br>
+**Materials**: 950 sterling silver and chrysocolla</br>
+**Dimension**s: Width: 35 mm Height: 45 mm</br>
+* Being an artisan piece, the measurements are always approximate

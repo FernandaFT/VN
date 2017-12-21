@@ -1,5 +1,5 @@
 ---
-title: Anillos
+title: Rings
 visible: true
 content:
     items: '@self.children'
