@@ -1,5 +1,5 @@
 ---
-title: 'Brazaletes y Pulseras'
+title: 'Pulseras y Brazaletes'
 visible: true
 content:
     items: '@self.children'
@@ -9,5 +9,17 @@ content:
         dir: asc
     pagination: false
     url_taxonomy_filters: true
+twitterenable: true
+twittercardoptions: summary
+articleenabled: false
+musiceventenabled: false
+orgaenabled: false
+eventenabled: false
+personenabled: false
+restaurantenabled: false
+restaurant:
+    acceptsReservations: 'yes'
+    priceRange: $
+facebookenable: true
 ---
 
