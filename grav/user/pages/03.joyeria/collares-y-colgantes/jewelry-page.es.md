@@ -3,7 +3,7 @@ title: 'Collares y Colgantes'
 visible: true
 content:
     items: '@self.children'
-    limit: 100
+    limit: 1000
     order:
         by: folder
         dir: asc
