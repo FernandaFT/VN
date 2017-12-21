@@ -1,7 +1,7 @@
 ---
 title: 'El caminante'
 price: 38€
-media_order: 'El caminante todas.jpg'
+media_order: El-caminante-todas.jpg
 twitterenable: true
 twittercardoptions: summary
 articleenabled: false
@@ -15,11 +15,11 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    'user/pages/03.joyeria/collares-y-colgantes/el-caminante/El caminante (2) (1).jpg':
-        name: 'El caminante (2) (1).jpg'
+    user/pages/03.joyeria/collares-y-colgantes/el-caminante/El-caminante.jpg:
+        name: El-caminante.jpg
         type: image/jpeg
         size: 754356
-        path: 'user/pages/03.joyeria/collares-y-colgantes/el-caminante/El caminante (2) (1).jpg'
+        path: user/pages/03.joyeria/collares-y-colgantes/el-caminante/El-caminante.jpg
 ---
 
 * The walker is a modern and carefree pendant that takes advantage of the curious shape of the coral to give it personality.
