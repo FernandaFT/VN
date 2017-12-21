@@ -1,6 +1,6 @@
 ---
 sectionTitle: Anillos
-redirectPage: /home/_anillos
+redirectPage: /joyeria/anillos
 leftImage:
     user/pages/01.home/03._anillos/Facetas.jpg:
         name: Facetas.jpg

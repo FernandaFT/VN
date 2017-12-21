@@ -1,6 +1,6 @@
 ---
 sectionTitle: Pendientes
-redirectPage: /home/_pendientes
+redirectPage: /joyeria/pendientes
 leftImage:
     user/pages/01.home/04._pendientes/Burbujas.jpg:
         name: Burbujas.jpg
