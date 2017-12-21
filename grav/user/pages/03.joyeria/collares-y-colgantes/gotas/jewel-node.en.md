@@ -22,8 +22,8 @@ myJewel:
         path: user/pages/03.joyeria/collares-y-colgantes/gotas/Gotas.jpg
 ---
 
-* Descripción: Este conjunto de estilo juvenil está basado en la forma de las gotas de
-agua.
-* Materiales: plata de ley 950
-* Dimensiones: Colgante: Ancho: 15 mm Alto: 60 mm Pendientes: Ancho: 9 mm Alto: 35 mm
-* al ser una pieza artesanal, las medidas siempre son aproximadas
+* Description: This juvenile style set is based on the shape of the drops of
+Water.
+* Materials: 950 sterling silver
+* Dimensions: Pendant: Width: 15 mm Height: 60 mm Earrings: Width: 9 mm Height: 35 mm
+* Being an artisan piece, the measurements are always approximate

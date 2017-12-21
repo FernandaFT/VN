@@ -22,7 +22,7 @@ myJewel:
         path: user/pages/03.joyeria/collares-y-colgantes/navegando/Navegando.jpg
 ---
 
-* Barquito de papel de corte divertido y actual.
-* Materiales: plata de ley 950
-* Dimensiones: Ancho: 25 mm Alto: 15 mm
-* *al ser una pieza artesanal, las medidas siempre son aproximadas
+ Funny and current cut paper boat.
+* Materials: 950 sterling silver
+* Dimensions: Width: 25 mm Height: 15 mm
+* * Being an artisan piece, the measurements are always approximate

@@ -1,5 +1,6 @@
 ---
 title: 'Ojo de Dragón'
+price: 60€
 twitterenable: true
 twittercardoptions: summary
 articleenabled: false
@@ -20,8 +21,8 @@ myJewel:
         path: user/pages/03.joyeria/collares-y-colgantes/ojo-de-dragon/Ojo-de-dragon.jpg
 ---
 
-Descripción: Es un vistoso y elegante dije de gran personalidad y presencia de estilo
-modernista.
-Materiales: plata de ley 950 y crisocola
-Dimensiones: Ancho: 35 mm Alto: 45 mm
-*al ser una pieza artesanal, las medidas siempre son aproximadas
+Description: It is a colorful and elegant statement of great personality and presence of style
+modernist.
+Materials: 950 sterling silver and chrysocolla
+Dimensions: Width: 35 mm Height: 45 mm
+* Being an artisan piece, the measurements are always approximate

@@ -1,15 +1,27 @@
 ---
 title: Corazoncito
 price: 20€
-media_order: 'corazoncito (4).jpg,corazoncito (1).jpg,corazoncito (2).jpg,corazoncito (3).jpg'
+media_order: 'corazoncito1.jpg,corazoncito2.jpg,corazoncito3.jpg'
+twitterenable: true
+twittercardoptions: summary
+articleenabled: false
+musiceventenabled: false
+orgaenabled: false
+eventenabled: false
+personenabled: false
+restaurantenabled: false
+restaurant:
+    acceptsReservations: 'yes'
+    priceRange: $
+facebookenable: true
 myJewel:
-    'user/pages/03.joyeria/collares-y-colgantes/corazoncito/corazoncito (4).jpg':
-        name: 'corazoncito (4).jpg'
+    user/pages/03.joyeria/collares-y-colgantes/corazoncito/corazoncito.jpg:
+        name: corazoncito.jpg
         type: image/jpeg
         size: 539401
-        path: 'user/pages/03.joyeria/collares-y-colgantes/corazoncito/corazoncito (4).jpg'
+        path: user/pages/03.joyeria/collares-y-colgantes/corazoncito/corazoncito.jpg
 ---
 
-* El colgante Corazoncito proyecta el cariño y el amor con su dulzura
-* **Dimensiones**: Ancho: 15 mm Alto: 15 mm
-* al ser una pieza artesanal, las medidas siempre son aproximadas
+* The Corazoncito pendant projects affection and love with its sweetness
+* ** Dimensions **: Width: 15 mm Height: 15 mm
+* Being an artisan piece, the measurements are always approximate
