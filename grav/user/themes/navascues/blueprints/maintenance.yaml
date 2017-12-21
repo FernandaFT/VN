@@ -77,7 +77,7 @@ form:
 
             care_third:
               type: section
-              title: Conservación
+              title: Tab 3
               underline: false
 
             header.care_third_title:
