@@ -1,5 +1,5 @@
 ---
-title: Accessories
+title: Accesorios
 content:
     items: '@self.children'
     limit: 5
