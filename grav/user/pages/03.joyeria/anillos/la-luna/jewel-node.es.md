@@ -15,11 +15,11 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    'user/pages/03.joyeria/anillos/la-luna/la luna 3.jpg':
-        name: 'la luna 3.jpg'
+    user/pages/03.joyeria/anillos/la-luna/la-luna.jpg:
+        name: la-luna.jpg
         type: image/jpeg
-        size: 1830102
-        path: 'user/pages/03.joyeria/anillos/la-luna/la luna 3.jpg'
+        size: 2173675
+        path: user/pages/03.joyeria/anillos/la-luna/la-luna.jpg
 ---
 
 Anillo mediano en plata de ley 950 con piedra luna
