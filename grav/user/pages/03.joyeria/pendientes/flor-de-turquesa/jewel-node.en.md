@@ -15,11 +15,11 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    'user/pages/03.joyeria/pendientes/flor-de-turquesa/Flor de turquesa 4.jpg':
-        name: 'Flor de turquesa 4.jpg'
+    user/pages/03.joyeria/pendientes/flor-de-turquesa/Flordeturquesa.jpg:
+        name: Flordeturquesa.jpg
         type: image/jpeg
-        size: 3060837
-        path: 'user/pages/03.joyeria/pendientes/flor-de-turquesa/Flor de turquesa 4.jpg'
+        size: 242638
+        path: user/pages/03.joyeria/pendientes/flor-de-turquesa/Flordeturquesa.jpg
 ---
 
 Long earrings Turquoise flower in sterling silver 950 and turquoises.

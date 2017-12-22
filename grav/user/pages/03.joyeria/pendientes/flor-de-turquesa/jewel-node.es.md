@@ -1,7 +1,6 @@
 ---
 title: 'Flor de Turquesa'
 price: 30€
-media_order: 'Flor de turquesa 4.jpg,Flor de turquesa 7.jpg,Flor de turquesa 5.jpg,Flor de turquesa 9.jpg'
 twitterenable: true
 twittercardoptions: summary
 articleenabled: false
@@ -15,11 +14,11 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    'user/pages/03.joyeria/pendientes/flor-de-turquesa/Flor de turquesa 4.jpg':
-        name: 'Flor de turquesa 4.jpg'
+    user/pages/03.joyeria/pendientes/flor-de-turquesa/Flordeturquesa.jpg:
+        name: Flordeturquesa.jpg
         type: image/jpeg
-        size: 3060837
-        path: 'user/pages/03.joyeria/pendientes/flor-de-turquesa/Flor de turquesa 4.jpg'
+        size: 242638
+        path: user/pages/03.joyeria/pendientes/flor-de-turquesa/Flordeturquesa.jpg
 ---
 
 Pendientes largos Flor de turquesa en plata de ley 950 y turquesas.
