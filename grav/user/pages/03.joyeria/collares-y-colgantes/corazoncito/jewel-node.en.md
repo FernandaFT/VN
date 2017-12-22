@@ -1,7 +1,6 @@
 ---
 title: Corazoncito
 price: 20€
-media_order: 'corazoncito1.jpg,corazoncito2.jpg,corazoncito3.jpg'
 twitterenable: true
 twittercardoptions: summary
 articleenabled: false
@@ -15,11 +14,11 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    user/pages/03.joyeria/collares-y-colgantes/corazoncito/corazoncito.jpg:
-        name: corazoncito.jpg
+    user/pages/03.joyeria/collares-y-colgantes/corazoncito/corazoncito1.jpg:
+        name: corazoncito1.jpg
         type: image/jpeg
-        size: 539401
-        path: user/pages/03.joyeria/collares-y-colgantes/corazoncito/corazoncito.jpg
+        size: 47928
+        path: user/pages/03.joyeria/collares-y-colgantes/corazoncito/corazoncito1.jpg
 ---
 
 * The Corazoncito pendant projects affection and love with its sweetness
