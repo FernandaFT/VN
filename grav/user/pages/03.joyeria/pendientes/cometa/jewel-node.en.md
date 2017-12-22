@@ -14,11 +14,11 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    'user/pages/03.joyeria/pendientes/cometa/Cometa (1).jpg':
-        name: 'Cometa (1).jpg'
+    user/pages/03.joyeria/pendientes/cometa/Cometa.jpg:
+        name: Cometa.jpg
         type: image/jpeg
-        size: 1055135
-        path: 'user/pages/03.joyeria/pendientes/cometa/Cometa (1).jpg'
+        size: 764903
+        path: user/pages/03.joyeria/pendientes/cometa/Cometa.jpg
 ---
 
 Cometa long earrings, in sterling silver 950

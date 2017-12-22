@@ -14,11 +14,11 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    'user/pages/03.joyeria/pendientes/burbuja/Burbujas 8.jpg':
-        name: 'Burbujas 8.jpg'
+    user/pages/03.joyeria/pendientes/burbuja/Burbujas.jpg:
+        name: Burbujas.jpg
         type: image/jpeg
-        size: 564867
-        path: 'user/pages/03.joyeria/pendientes/burbuja/Burbujas 8.jpg'
+        size: 630921
+        path: user/pages/03.joyeria/pendientes/burbuja/Burbujas.jpg
 ---
 
 Long earrings Bubble of minimalist style in sterling silver 950.

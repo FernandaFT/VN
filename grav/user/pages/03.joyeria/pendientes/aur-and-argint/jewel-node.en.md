@@ -1,6 +1,7 @@
 ---
 title: 'Aur & Argint'
 price: 53€
+media_order: 'Aur & Argint.jpg,Aur & Argint10.jpg'
 twitterenable: true
 twittercardoptions: summary
 articleenabled: false
@@ -14,11 +15,11 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    'user/pages/03.joyeria/pendientes/aur-and-argint/Aur & Argint (4).jpg':
-        name: 'Aur & Argint (4).jpg'
+    'user/pages/03.joyeria/pendientes/aur-and-argint/Aur & Argint.jpg':
+        name: 'Aur & Argint.jpg'
         type: image/jpeg
         size: 2482536
-        path: 'user/pages/03.joyeria/pendientes/aur-and-argint/Aur & Argint (4).jpg'
+        path: 'user/pages/03.joyeria/pendientes/aur-and-argint/Aur & Argint.jpg'
 ---
 
 Long earrings in sterling silver 950 with patina and gold plating.

@@ -1,7 +1,7 @@
 ---
 title: 'Estratos curvados'
 price: 30€
-media_order: 'Estratos curvados (2).jpg,Estratos curvados (1).jpg,Estratos curvados (4).jpg,Estratos curvados todas.jpg'
+media_order: 'Estratoscurvados.jpg,Estratos curvados.jpg,Estratos curvados4.jpg'
 twitterenable: true
 twittercardoptions: summary
 articleenabled: false
@@ -15,11 +15,11 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    'user/pages/03.joyeria/pendientes/estratos-curvados/Estratos curvados (2).jpg':
-        name: 'Estratos curvados (2).jpg'
+    user/pages/03.joyeria/pendientes/estratos-curvados/Estratoscurvados.jpg:
+        name: Estratoscurvados.jpg
         type: image/jpeg
         size: 1193986
-        path: 'user/pages/03.joyeria/pendientes/estratos-curvados/Estratos curvados (2).jpg'
+        path: user/pages/03.joyeria/pendientes/estratos-curvados/Estratoscurvados.jpg
 ---
 
 Modern and stylized short earrings with curved and textured blade in sterling silver 950
