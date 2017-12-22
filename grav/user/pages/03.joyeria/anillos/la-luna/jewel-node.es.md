@@ -15,15 +15,15 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    user/pages/03.joyeria/anillos/la-luna/la-luna.jpg:
-        name: la-luna.jpg
+    user/pages/03.joyeria/anillos/la-luna/laluna.jpg:
+        name: laluna.jpg
         type: image/jpeg
-        size: 2173675
-        path: user/pages/03.joyeria/anillos/la-luna/la-luna.jpg
+        size: 84933
+        path: user/pages/03.joyeria/anillos/la-luna/laluna.jpg
 ---
 
-Anillo mediano en plata de ley 950 con piedra luna
-El anillo La Luna tiene un diseño poderoso y elegante gracias a sus líneas curvas y su tectura de grano.</br>
-**Materiales**: plata de ley 950 </br>
-**Dimensiones**: Ancho: 10 mm Alto: según medida </br>
-*al ser una pieza artesanal, las medidas siempre son aproximadas
+* Anillo mediano en plata de ley 950 con piedra luna
+* El anillo La Luna tiene un diseño poderoso y elegante gracias a sus líneas curvas y su tectura de grano.
+* Materiales: plata de ley 950 
+* Dimensiones: Ancho: 10 mm Alto: según medida
+* al ser una pieza artesanal, las medidas siempre son aproximadas
