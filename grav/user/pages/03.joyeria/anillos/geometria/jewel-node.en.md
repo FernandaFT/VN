@@ -15,11 +15,11 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    'user/pages/03.joyeria/anillos/geometria/Geometría (4).jpg':
-        name: 'Geometría (4).jpg'
+    user/pages/03.joyeria/anillos/geometria/Geometria.jpg:
+        name: Geometria.jpg
         type: image/jpeg
-        size: 170913
-        path: 'user/pages/03.joyeria/anillos/geometria/Geometría (4).jpg'
+        size: 219966
+        path: user/pages/03.joyeria/anillos/geometria/Geometria.jpg
 ---
 
 Variable width ring

@@ -14,11 +14,11 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    'user/pages/03.joyeria/anillos/el-cielo/el cielo 2.jpg':
-        name: 'el cielo 2.jpg'
+    user/pages/03.joyeria/anillos/el-cielo/el-cielo.jpg:
+        name: el-cielo.jpg
         type: image/jpeg
         size: 2020208
-        path: 'user/pages/03.joyeria/anillos/el-cielo/el cielo 2.jpg'
+        path: user/pages/03.joyeria/anillos/el-cielo/el-cielo.jpg
 ---
 
 El Cielo wide ring, in 950 sterling silver and a turquoise

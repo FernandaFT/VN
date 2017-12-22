@@ -15,11 +15,11 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    'user/pages/03.joyeria/anillos/cuadratus/Cuadratus 2.jpg':
-        name: 'Cuadratus 2.jpg'
+    user/pages/03.joyeria/anillos/cuadratus/Cuadratus.jpg:
+        name: Cuadratus.jpg
         type: image/jpeg
-        size: 2278854
-        path: 'user/pages/03.joyeria/anillos/cuadratus/Cuadratus 2.jpg'
+        size: 2394768
+        path: user/pages/03.joyeria/anillos/cuadratus/Cuadratus.jpg
 ---
 
 Cuadratus ring in sterling silver 950 and Colombian emerald
