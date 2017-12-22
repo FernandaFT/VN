@@ -14,11 +14,11 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    'user/pages/03.joyeria/pendientes/arte-cubico/Arte cúbico (2).jpg':
-        name: 'Arte cúbico (2).jpg'
+    user/pages/03.joyeria/pendientes/arte-cubico/Arte-cubico.jpg:
+        name: Arte-cubico.jpg
         type: image/jpeg
-        size: 1419648
-        path: 'user/pages/03.joyeria/pendientes/arte-cubico/Arte cúbico (2).jpg'
+        size: 112378
+        path: user/pages/03.joyeria/pendientes/arte-cubico/Arte-cubico.jpg
 ---
 
 Long earrings Cubic art, in sterling silver 950, resin and color pigment.

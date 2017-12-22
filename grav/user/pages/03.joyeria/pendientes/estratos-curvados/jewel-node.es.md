@@ -15,11 +15,11 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    'user/pages/03.joyeria/pendientes/estratos-curvados/Estratos curvados (2).jpg':
-        name: 'Estratos curvados (2).jpg'
+    user/pages/03.joyeria/pendientes/estratos-curvados/Estratoscurvados.jpg:
+        name: Estratoscurvados.jpg
         type: image/jpeg
-        size: 1193986
-        path: 'user/pages/03.joyeria/pendientes/estratos-curvados/Estratos curvados (2).jpg'
+        size: 227636
+        path: user/pages/03.joyeria/pendientes/estratos-curvados/Estratoscurvados.jpg
 ---
 
 Pendientes cortos modernos y estilizados de lámina curvada y con textura en plata de ley 950
