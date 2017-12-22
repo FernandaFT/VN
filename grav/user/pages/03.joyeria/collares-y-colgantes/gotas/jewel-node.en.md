@@ -15,11 +15,11 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    user/pages/03.joyeria/collares-y-colgantes/gotas/Gotas.jpg:
-        name: Gotas.jpg
+    user/pages/03.joyeria/collares-y-colgantes/gotas/gotas.jpg:
+        name: gotas.jpg
         type: image/jpeg
-        size: 2865856
-        path: user/pages/03.joyeria/collares-y-colgantes/gotas/Gotas.jpg
+        size: 77218
+        path: user/pages/03.joyeria/collares-y-colgantes/gotas/gotas.jpg
 ---
 
 * Description: This juvenile style set is based on the shape of the drops of

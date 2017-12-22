@@ -1,7 +1,6 @@
 ---
 title: Gotas
 price: 75€
-media_order: Gotas1.jpg
 twitterenable: true
 twittercardoptions: summary
 articleenabled: false
@@ -15,11 +14,11 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    user/pages/03.joyeria/collares-y-colgantes/gotas/Gotas.jpg:
-        name: Gotas.jpg
+    user/pages/03.joyeria/collares-y-colgantes/gotas/gotas.jpg:
+        name: gotas.jpg
         type: image/jpeg
-        size: 2865856
-        path: user/pages/03.joyeria/collares-y-colgantes/gotas/Gotas.jpg
+        size: 77218
+        path: user/pages/03.joyeria/collares-y-colgantes/gotas/gotas.jpg
 ---
 
 * Descripción: Este conjunto de estilo juvenil está basado en la forma de las gotas de
