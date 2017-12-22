@@ -15,15 +15,15 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    'user/pages/03.joyeria/pulseras-y-brazaletes/naturaleza-1/Naturaleza (3).jpg':
-        name: 'Naturaleza (3).jpg'
+    user/pages/03.joyeria/brazaletes-y-pulseras/naturaleza-1/Naturaleza.jpg:
+        name: Naturaleza.jpg
         type: image/jpeg
-        size: 127757
-        path: 'user/pages/03.joyeria/pulseras-y-brazaletes/naturaleza-1/Naturaleza (3).jpg'
+        size: 51558
+        path: user/pages/03.joyeria/brazaletes-y-pulseras/naturaleza-1/Naturaleza.jpg
 ---
 
-Narrow bracelet in 950 sterling silver and Colombian emerald
-Feminine and flattering bracelet of natural inspiration and delicate classic line design.</br>
-**Materials**: 950 sterling silver and Colombian emerald</br>
-**Dimensions**: Width: n.a.</br>
+* Narrow bracelet in 950 sterling silver and Colombian emerald
+* Feminine and flattering bracelet of natural inspiration and delicate classic line design.
+* Materials: 950 sterling silver and Colombian emerald
+* Dimensions: Width: n.a.
 * Being an artisan piece, the measurements are always approximate
