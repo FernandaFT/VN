@@ -1,6 +1,6 @@
 ---
 sectionTitle: Bracelets
-redirectPage: /home/_pulseras-y-brazaletes
+redirectPage: /joyeria/brazaletes-y-pulseras
 leftImage:
     user/pages/01.home/02._pulseras-y-brazaletes/Ágata-de-fuego.jpg:
         name: Ágata-de-fuego.jpg

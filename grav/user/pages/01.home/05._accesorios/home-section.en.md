@@ -1,6 +1,6 @@
 ---
 sectionTitle: Accessories
-redirectPage: /home/_accesorios
+redirectPage: /accesorios
 leftImage:
     'user/pages/01.home/05._accesorios/Gusanito 2.jpg':
         name: 'Gusanito 2.jpg'
