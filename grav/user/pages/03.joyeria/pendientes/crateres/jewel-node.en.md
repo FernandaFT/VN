@@ -1,6 +1,7 @@
 ---
 title: Cráteres
 price: 'according to model'
+media_order: 'Cráteres.jpg,Cráteres2.jpg,Cráterespq17.jpg'
 twitterenable: true
 twittercardoptions: summary
 articleenabled: false
@@ -14,11 +15,11 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    'user/pages/03.joyeria/pendientes/crateres/Cráteres (2).jpg':
-        name: 'Cráteres (2).jpg'
+    user/pages/03.joyeria/pendientes/crateres/Cráteres.jpg:
+        name: Cráteres.jpg
         type: image/jpeg
-        size: 1056320
-        path: 'user/pages/03.joyeria/pendientes/crateres/Cráteres (2).jpg'
+        size: 415163
+        path: user/pages/03.joyeria/pendientes/crateres/Cráteres.jpg
 ---
 
 Round earrings in textured sheet of sterling silver 950

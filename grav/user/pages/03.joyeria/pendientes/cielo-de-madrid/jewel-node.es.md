@@ -15,11 +15,11 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    'user/pages/03.joyeria/pendientes/cielo-de-madrid/Cielo de Madrid (6).jpg':
-        name: 'Cielo de Madrid (6).jpg'
+    'user/pages/03.joyeria/pendientes/cielo-de-madrid/Cielo de Madrid.jpg':
+        name: 'Cielo de Madrid.jpg'
         type: image/jpeg
         size: 797132
-        path: 'user/pages/03.joyeria/pendientes/cielo-de-madrid/Cielo de Madrid (6).jpg'
+        path: 'user/pages/03.joyeria/pendientes/cielo-de-madrid/Cielo de Madrid.jpg'
 ---
 
 Pendientes largos en resina y plata de ley 950

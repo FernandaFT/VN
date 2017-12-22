@@ -15,11 +15,11 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    'user/pages/03.joyeria/pendientes/anturios/Anturios 7.jpg':
-        name: 'Anturios 7.jpg'
+    user/pages/03.joyeria/pendientes/anturios/Anturios.jpg:
+        name: Anturios.jpg
         type: image/jpeg
         size: 2942733
-        path: 'user/pages/03.joyeria/pendientes/anturios/Anturios 7.jpg'
+        path: user/pages/03.joyeria/pendientes/anturios/Anturios.jpg
 ---
 
 Pendientes largos Anturios, en plata de ley 950 con perla japonesa

@@ -1,7 +1,7 @@
 ---
 title: 'Cielo de Madrid'
 price: 30€
-media_order: 'Cielo de Madrid (6).jpg,Cielo de Madrid (5).jpg,Cielo de Madrid (1).jpg'
+media_order: 'Cielo de Madrid.jpg,Cielo de Madrid5.jpg'
 twitterenable: true
 twittercardoptions: summary
 articleenabled: false
@@ -15,11 +15,11 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    'user/pages/03.joyeria/pendientes/cielo-de-madrid/Cielo de Madrid (6).jpg':
-        name: 'Cielo de Madrid (6).jpg'
+    'user/pages/03.joyeria/pendientes/cielo-de-madrid/Cielo de Madrid.jpg':
+        name: 'Cielo de Madrid.jpg'
         type: image/jpeg
         size: 797132
-        path: 'user/pages/03.joyeria/pendientes/cielo-de-madrid/Cielo de Madrid (6).jpg'
+        path: 'user/pages/03.joyeria/pendientes/cielo-de-madrid/Cielo de Madrid.jpg'
 ---
 
 Long earrings in resin and sterling silver 950

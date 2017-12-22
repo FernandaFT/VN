@@ -15,11 +15,11 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    'user/pages/03.joyeria/pendientes/aur-and-argint/Aur & Argint (4).jpg':
-        name: 'Aur & Argint (4).jpg'
+    'user/pages/03.joyeria/pendientes/aur-and-argint/Aur & Argint.jpg':
+        name: 'Aur & Argint.jpg'
         type: image/jpeg
         size: 2482536
-        path: 'user/pages/03.joyeria/pendientes/aur-and-argint/Aur & Argint (4).jpg'
+        path: 'user/pages/03.joyeria/pendientes/aur-and-argint/Aur & Argint.jpg'
 ---
 
 Pendientes largos en plata de ley 950 con pátina y baño de oro.

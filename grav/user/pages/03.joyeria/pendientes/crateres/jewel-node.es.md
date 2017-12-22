@@ -15,11 +15,11 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    'user/pages/03.joyeria/pendientes/crateres/Cráteres (2).jpg':
-        name: 'Cráteres (2).jpg'
+    user/pages/03.joyeria/pendientes/crateres/Cráteres.jpg:
+        name: Cráteres.jpg
         type: image/jpeg
-        size: 1056320
-        path: 'user/pages/03.joyeria/pendientes/crateres/Cráteres (2).jpg'
+        size: 415163
+        path: user/pages/03.joyeria/pendientes/crateres/Cráteres.jpg
 ---
 
 Pendientes redondos en lámina texturizada de plata de ley 950

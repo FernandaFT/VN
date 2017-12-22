@@ -1,7 +1,7 @@
 ---
 title: Cometa
 price: 27€
-media_order: 'Cometa (1).jpg,Cometa (2).jpg,Cometa (9).jpg'
+media_order: 'Cometa.jpg,Cometa1.jpg,Cometa2.jpg'
 twitterenable: true
 twittercardoptions: summary
 articleenabled: false
@@ -15,11 +15,11 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    'user/pages/03.joyeria/pendientes/cometa/Cometa (1).jpg':
-        name: 'Cometa (1).jpg'
+    user/pages/03.joyeria/pendientes/cometa/Cometa.jpg:
+        name: Cometa.jpg
         type: image/jpeg
-        size: 1055135
-        path: 'user/pages/03.joyeria/pendientes/cometa/Cometa (1).jpg'
+        size: 764903
+        path: user/pages/03.joyeria/pendientes/cometa/Cometa.jpg
 ---
 
 Pendientes largos Cometa, en plata de ley 950

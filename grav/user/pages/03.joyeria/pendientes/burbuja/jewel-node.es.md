@@ -1,7 +1,7 @@
 ---
 title: Burbuja
 price: 'Dependiendo del material'
-media_order: 'Burbujas 8.jpg,Burbujas 1.jpg,Burbujas D 1.jpg,Burbujas todas.jpg'
+media_order: 'Burbujas.jpg,Burbujas8.jpg,BurbujasD1.jpg'
 twitterenable: true
 twittercardoptions: summary
 articleenabled: false
@@ -15,11 +15,11 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    'user/pages/03.joyeria/pendientes/burbuja/Burbujas 8.jpg':
-        name: 'Burbujas 8.jpg'
+    user/pages/03.joyeria/pendientes/burbuja/Burbujas.jpg:
+        name: Burbujas.jpg
         type: image/jpeg
-        size: 564867
-        path: 'user/pages/03.joyeria/pendientes/burbuja/Burbujas 8.jpg'
+        size: 630921
+        path: user/pages/03.joyeria/pendientes/burbuja/Burbujas.jpg
 ---
 
 Pendientes largos Burbuja de estilo minimalista en plata de ley 950.
