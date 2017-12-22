@@ -15,15 +15,15 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    user/pages/03.joyeria/anillos/facetas/Facetas.jpg:
-        name: Facetas.jpg
+    user/pages/03.joyeria/anillos/facetas/Facetas1.jpg:
+        name: Facetas1.jpg
         type: image/jpeg
-        size: 157232
-        path: user/pages/03.joyeria/anillos/facetas/Facetas.jpg
+        size: 62610
+        path: user/pages/03.joyeria/anillos/facetas/Facetas1.jpg
 ---
 
-Ring of medium thickness in sterling silver 950 with external texture
-The Facetas ring, with its textured finish adds luminosity and force the person who carries it.</br>
-**Materials**: 950 sterling silver</br>
-**Dimensions**: Width: 5 mm Height: as measured</br>
+* Ring of medium thickness in sterling silver 950 with external texture
+* The Facetas ring, with its textured finish adds luminosity and force the person who carries it.
+* Material : 950 sterling silver
+* Dimension : Width: 5 mm Height: as measured
 * Being an artisan piece, the measurements are always approximate

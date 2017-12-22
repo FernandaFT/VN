@@ -18,12 +18,12 @@ myJewel:
     user/pages/03.joyeria/anillos/geometria/Geometria.jpg:
         name: Geometria.jpg
         type: image/jpeg
-        size: 219966
+        size: 73732
         path: user/pages/03.joyeria/anillos/geometria/Geometria.jpg
 ---
 
-Anillo de ancho variable
-Anillo en plata de ley 950 de ancho asimétrico </br>
-**Materiales**: plata de ley 950</br>
-**Dimensiones**: Ancho: 4-8 mm Alto: 27 mm</br>
-*al ser una pieza artesanal, las medidas siempre son aproximadas
+* Anillo de ancho variable
+* Anillo en plata de ley 950 de ancho asimétrico
+* Materiales: plata de ley 950
+* Dimensiones: Ancho: 4-8 mm Alto: 27 mm
+* al ser una pieza artesanal, las medidas siempre son aproximadas

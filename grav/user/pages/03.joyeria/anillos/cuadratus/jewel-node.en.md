@@ -15,15 +15,15 @@ restaurant:
     priceRange: $
 facebookenable: true
 myJewel:
-    user/pages/03.joyeria/anillos/cuadratus/Cuadratus.jpg:
-        name: Cuadratus.jpg
+    user/pages/03.joyeria/anillos/cuadratus/Cuadratus1.jpg:
+        name: Cuadratus1.jpg
         type: image/jpeg
-        size: 2394768
-        path: user/pages/03.joyeria/anillos/cuadratus/Cuadratus.jpg
+        size: 98180
+        path: user/pages/03.joyeria/anillos/cuadratus/Cuadratus1.jpg
 ---
 
-Cuadratus ring in sterling silver 950 and Colombian emerald
-The Cuadratus ring is inspired by geometric shapes giving it a serenity and elegance look very current.</br>
-**Materials**: 950 sterling silver and Colombian emerald</br>
-**Dimensions**: according to measure </br>
+* Cuadratus ring in sterling silver 950 and Colombian emerald
+* The Cuadratus ring is inspired by geometric shapes giving it a serenity and elegance look very current.
+* Materials: 950 sterling silver and Colombian emerald
+* Dimensions: according to measure
 * Being an artisan piece, the measurements are always approximate
